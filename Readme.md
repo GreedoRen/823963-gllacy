@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Nikita Anikin](https://up.htmlacademy.ru/htmlcss/22/user/823963).
-* Наставник: [Дмитрий Мирошниченко] (https://up.htmlacademy.ru/htmlcss/22/user/591417)
+* Наставник: [Дмитрий Мирошниченко](https://up.htmlacademy.ru/htmlcss/22/user/591417)
 
 ---
 
