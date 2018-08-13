@@ -23,40 +23,39 @@
                     <a href="about-us.html">О Компании</a>
                 </li>
             </ul>
-            <ul class="user-navigation">
-                <li class="search">Поиск</li>
-                <li class="login">Вход</li>
-                <li class="cart-added">2 товара</li>
-                <li>
-                    <ul>
-                        <li>
-                            <table border="1">
-                                <tr>
-                                    <td>Удалить</td>
-                                    <td>Пломбир с апельсиновым джемом</td>
-                                    <td>1,5 кг х 200 руб.</td>
-                                    <td>300 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td>Удалить</td>
-                                    <td>Клубный пломбир с присыпкой из белого шоколада</td>
-                                    <td>1,5 кг х 300 руб.</td>
-                                    <td>450 руб.</td>
-                                </tr>
-                            </table>
-                            <span class="preview-total-price">Итого: 750 руб.</span>
-                            <span class="cart-preview-btn btn">Оформить заказ</span>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <p class="header-time">С 10 до 20, ужедневно</p>
-            <p class="header-number">8 812 450-25-25</p>
         </nav>
+        <ul class="user-navigation">
+            <li class="search">Поиск</li>
+            <li class="login">Вход</li>
+            <li class="cart-added">
+                <div>2 товара</div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>Удалить</td>
+                            <td>Пломбир с апельсиновым джемом</td>
+                            <td>1,5 кг х 200 руб.</td>
+                            <td>300 руб.</td>
+                        </tr>
+                        <tr>
+                            <td>Удалить</td>
+                            <td>Клубный пломбир с присыпкой из белого шоколада</td>
+                            <td>1,5 кг х 300 руб.</td>
+                            <td>450 руб.</td>
+                        </tr>
+                    </table>
+                    <span class="preview-total-price">Итого: 750 руб.</span>
+                    <span class="cart-preview-btn btn">Оформить заказ</span>
+                </div>
+            </li>
+        </ul>
+        <p class="header-time">С 10 до 20, ужедневно</p>
+        <p class="header-number">8 812 450-25-25</p>
     </header>
 
     <main class="catalog-main">
         <section class="breadcrumbs">
+            <h2 class="visually-hidden">Навигационная цепочка</h2>
             <ul class="breadcrumbs-list">
                 <li>
                     <a href="index.html">Главная</a>
@@ -124,8 +123,10 @@
         <ul class="catalog-products">
             <li class="catalog-item">
                 <img src="img/item-1.jpg" height="200" width="200" alt>
-                <span class="product-price">310 Р</span>
-                <span class="product-weight">/кг</span>
+                <p class="product-price">
+                    310 Р
+                    <span class="product-weight">/кг</span>
+                </p>
                 <h3 class="catalog-item-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 <p class="catalog-quick-view">
                     <a href="#" class="catalog-item-1">Быстрый просмотр</a>
@@ -133,7 +134,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-2.jpg" height="200" width="200" alt>
-                <span class="product-price">380 Р</span>
+                <p class="product-price">380 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочно-кофейное с кусочками шоколада</h3>
                 <p class="catalog-quick-view">
@@ -142,7 +143,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-3.jpg" height="200" width="200" alt>
-                <span class="product-price">355 Р</span>
+                <p class="product-price">355 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 <p class="catalog-quick-view">
@@ -151,7 +152,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-4.jpg" height="200" width="200" alt>
-                <span class="product-price">415 Р</span>
+                <p class="product-price">415 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочное крем-брюле с карамельной подливкой</h3>
                 <p class="catalog-quick-view">
@@ -160,7 +161,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-5.jpg" height="200" width="200" alt>
-                <span class="product-price">325 Р</span>
+                <p class="product-price">325 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочное с брусничным джемом</h3>
                 <p class="catalog-quick-view">
@@ -169,7 +170,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-6.jpg" height="200" width="200" alt>
-                <span class="product-price">410 Р</span>
+                <p class="product-price">410 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочно-черничное с цельными ягодами черники </h3>
                 <p class="catalog-quick-view">
@@ -178,7 +179,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-7.jpg" height="200" width="200" alt>
-                <span class="product-price">375 Р</span>
+                <p class="product-price">375 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочно-лимонное с карамельной присыпкой</h3>
                 <p class="catalog-quick-view">
@@ -187,7 +188,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-8.jpg" height="200" width="200" alt>
-                <span class="product-price">320 Р</span>
+                <p class="product-price">320 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочное с шоколадной стружкой</h3>
                 <p class="catalog-quick-view">
@@ -196,7 +197,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-9.jpg" height="200" width="200" alt>
-                <span class="product-price">440 Р</span>
+                <p class="product-price">440 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочно-ванильное с кусочками шоколада</h3>
                 <p class="catalog-quick-view">
@@ -205,7 +206,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-10.jpg" height="200" width="200" alt>
-                <span class="product-price">435 Р</span>
+                <p class="product-price">435 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочноe с ментоловым сиропом</h3>
                 <p class="catalog-quick-view">
@@ -214,7 +215,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-11.jpg" height="200" width="200" alt>
-                <span class="product-price">355 Р</span>
+                <p class="product-price">355 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочное с кусочками черного шоколада</h3>
                 <p class="catalog-quick-view">
@@ -223,7 +224,7 @@
             </li>
             <li class="catalog-item">
                 <img src="img/item-12.jpg" height="200" width="200" alt>
-                <span class="product-price">420 Р</span>
+                <p class="product-price">420 Р</p>
                 <span class="product-weight">/кг</span>
                 <h3 class="catalog-item-text">Сливочное с мятным сиропом</h3>
                 <p class="catalog-quick-view">
@@ -232,46 +233,49 @@
             </li>
         </ul>
 
-        <section class="catalog-paginator">
-            <ul class="paginator">
-                <li>
-                    <a href="#" class="disabled-paginator paginator-link">Вперед</a>
-                </li>
-                <li>
-                    <a href="#" class="active-paginator paginator-link">1</a>
-                </li>
-                <li>
-                    <a href="#" class="paginator-link">2</a>
-                </li>
-                <li>
-                    <a href="#" class="paginator-link">3</a>
-                </li>
-                <li>
-                    <a href="#" class="paginator-link">4</a>
-                </li>
-                <li>
-                    <a href="#" class="paginator-link">5</a>
-                </li>
-                <li>
-                    <a href="#" class="paginator-link">Назад</a>
-                </li>
-            </ul>
-        </section>
+        <nav class="paginator-nav">
+            <section class="catalog-paginator">
+                <h2 class="visually-hidden">Пагинатор</h2>
+                <ul class="paginator">
+                    <li>
+                        <a href="#" class="disabled-paginator paginator-link">Вперед</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active-paginator paginator-link">1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="paginator-link">2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="paginator-link">3</a>
+                    </li>
+                    <li>
+                        <a href="#" class="paginator-link">4</a>
+                    </li>
+                    <li>
+                        <a href="#" class="paginator-link">5</a>
+                    </li>
+                    <li>
+                        <a href="#" class="paginator-link">Назад</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
     </main>
 
     <footer class="main-footer">
         <ul class="footer-social">
             <li>
-                <a href="#" class="footer-twitter">Tw</a>
+                <a href="#" class="footer-twitter">Twitter</a>
             </li>
             <li>
-                <a href="#" class="footer-instagram">Ins</a>
+                <a href="#" class="footer-instagram">Instagram</a>
             </li>
             <li>
-                <a href="#" class="footer-facebook">Fb</a>
+                <a href="#" class="footer-facebook">Facebook</a>
             </li>
             <li>
-                <a href="#" class="footer-vkontakte">Vk</a>
+                <a href="#" class="footer-vkontakte">Vkontakte</a>
             </li>
         </ul>
         <ul class="footer-link">

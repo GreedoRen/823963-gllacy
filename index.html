@@ -13,16 +13,22 @@
             <ul class="site-navigation">
                 <li class="catalog-header-menu">
                     <a href="catalog.html">Каталог</a>
-                </li>
-                <li>
                     <ul class="catalog-list">
-                        <li class="new-products tit-header">Новинки</li>
+                        <li class="new-products tit-header">
+                            <a href="#">Новинки</a>
+                        </li>
                         <li class="cream">
                             <a href="catalog.html">Сливочное</a>
                         </li>
-                        <li class="sherbet active-menu">Щербет</li>
-                        <li class="fruit ice">Фруктовый лед</li>
-                        <li class="melorin">Мелорин</li>
+                        <li class="sherbet active-menu">
+                            <a href="#">Щербет</a>
+                        </li>
+                        <li class="fruit ice">
+                            <a href="#">Фруктовый лед</a>
+                        </li>
+                        <li class="melorin">
+                            <a href="#">Мелорин</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="shipping-and-payment">
@@ -32,41 +38,39 @@
                     <a href="about-us.html">О Компании</a>
                 </li>
             </ul>
-            <ul class="user-navigation">
-                <li class="search">Поиск</li>
-                <li>
-                    <ul>
-                        <li>
-                            <span class="popup-search form">Что ищем</span>
-                        </li>
-                    </ul>
-                </li>
-                <li class="login">Вход</li>
-                <li>
-                    <ul>
-                        <li>
-                            <span class="popup-email form">Электронная почта</span>
-                            <span class="popup-pass form">Пароль</span>
-                            <span class="popup-btn btn">Войти</span>
-                            <span class="pass-help">
-                                <a href="#">Забыли пароль?</a>
-                            </span>
-                            <span class="new-reg">
-                                <a href="#">Новая регистрация</a>
-                            </span>
-                        </li>
-                    </ul>
-                </li>
-                <li class="cart">Корзина</li>
-            </ul>
-            <p class="header-time">С 10 до 20, ужедневно</p>
-            <p class="header-number">8 812 450-25-25</p>
         </nav>
+        <ul class="user-navigation">
+            <li class="search">
+                <div>Поиск</div>
+                <div>
+                    <span class="popup-search form">Что ищем</span>
+                </div>
+            </li>
+            <li class="login">
+                <div>Вход</div>
+                <div>
+                    <span class="popup-email form">Электронная почта</span>
+                    <span class="popup-pass form">Пароль</span>
+                    <span class="popup-btn btn">Войти</span>
+                    <span class="pass-help">
+                        <a href="#">Забыли пароль?</a>
+                    </span>
+                    <span class="new-reg">
+                        <a href="#">Новая регистрация</a>
+                    </span>
+                </div>
+            </li>
+            <li class="cart">Корзина</li>
+        </ul>
+        <p class="header-time">С 10 до 20, ужедневно</p>
+        <p class="header-number">8 812 450-25-25</p>
+
     </header>
 
     <main class="container">
         <h1 class="visually-hidden"> Магазин мороженого "Глейси"</h1>
         <section class="slider-top">
+            <h2 class="visually-hidden">Слайдер</h2>
             <div>
                 <input type="radio" id="background-slider-1" name="background-slider" checked>
                 <label for="background-slider-1"></label>
@@ -76,8 +80,16 @@
                 <label for="background-slider-3"></label>
             </div>
             <div>
-                <img src="img/slider-1.jpg" width="1000" height="200" alt>
-                <h2 class="slider-text">Крем-брюле и пломбир с малиновым джемом</h2>
+                <img src="img/slider-1.jpg" width="100" height="200" alt>
+                <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
+            </div>
+            <div>
+                <img src="img/slider-2.jpg" width="100" height="200" alt>
+                <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
+            </div>
+            <div>
+                <img src="img/slider-3.jpg" width="100" height="200" alt>
+                <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
             </div>
             <p class="slider-text-btn btn">
                 <a class="slider-btn" href="#">Дайте оба!</a>
@@ -85,20 +97,20 @@
         </section>
 
 
-        <div class="stock-first">
+        <section class="stock-first">
             <h3 class="promo-head-first">Малинка даром!</h3>
             <p class="promo-text-first">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</p>
             <p class="promo-button-first btn">
                 <a href="#">Хочу варенье!</a>
             </p>
-        </div>
-        <div class="stock-second">
+        </section>
+        <section class="stock-second">
             <h3 class="promo-head-second">Шоколадки даром!</h3>
             <p class="promo-text-action">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
             <p class="promo-button-second btn">
                 <a href="#">Хочу шоколадки!</a>
             </p>
-        </div>
+        </section>
 
 
         <ul class="product-list">
@@ -136,24 +148,31 @@
             </li>
         </ul>
 
-        <section class="about-us">
-            <h2 class="about-us-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-            <div class="column-first">
-                <p class="about-text about-icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
-                    и проверенных временем технологий.</p>
-                <p class="about-text about-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
-                    ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-            </div>
-            <div class="column-second">
-                <p class="about-text about-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
-                    долговременное сотрудничество.</p>
-                <p class="about-text about-thermo">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
-                    растаять в пути и позволяет сохранить превосходный вкус.</p>
-            </div>
-        </section>
+        <ul class="about-us">
+            <li>
+                <h2 class="about-us-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+            </li>
+            <li>
+                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
+                временем технологий.
+            </li>
+            <li>
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
+                и добавки произведены из натурального, экологически чистого сырья.
+            </li>
+            <li>
+                Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
+                сотрудничество.
+            </li>
+            <li>
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути
+                и позволяет сохранить превосходный вкус.
+            </li>
+        </ul>
 
 
         <article class="blog">
+            <h2 class="visually-hidden">Блог</h2>
             <p class="blog-text">Новое в нашем блоге</p>
             <p class="new-article">
                 <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -161,6 +180,7 @@
         </article>
 
         <section class="send-mail">
+            <h2 class="visually-hidden">Рассылка</h2>
             <p class="send-mail-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
                 не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <span class="mail-input">Электронная почта</span>
@@ -169,6 +189,7 @@
 
 
         <section class="adress-and-map">
+            <h2 class="visually-hidden">Адресс</h2>
             <div class="map">
                 <img src="#" width="900" height="435" alt="Наше местоположение на карте">
             </div>
@@ -190,16 +211,16 @@
     <footer class="main-footer">
         <ul class="footer-social">
             <li>
-                <a href="#" class="footer-twitter">Tw</a>
+                <a href="#" class="footer-twitter">Twitter</a>
             </li>
             <li>
-                <a href="#" class="footer-instagram">Ins</a>
+                <a href="#" class="footer-instagram">Instagram</a>
             </li>
             <li>
-                <a href="#" class="footer-facebook">Fb</a>
+                <a href="#" class="footer-facebook">Facebook</a>
             </li>
             <li>
-                <a href="#" class="footer-vkontakte">Vk</a>
+                <a href="#" class="footer-vkontakte">Vkontakte</a>
             </li>
         </ul>
         <ul class="footer-link">
