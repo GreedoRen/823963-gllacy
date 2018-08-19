@@ -42,26 +42,22 @@
         <ul class="user-navigation">
             <li class="search">
                 <div>Поиск</div>
-                <div>
+                <form method="post" action="https://echo.htmlacademy.ru">
                     <label for="header-search">Что ищем?</label>
-                    <input type="text" class="popup-search form" id="header-search" name="search" placeholder="Что ищем?">
-                </div>
+                    <input type="text" class="popup-search form" id="header-search" name="search" placeholder="Что ищем?" required>
+                </form>
             </li>
             <li class="login">
                 <div>Вход</div>
-                <div>
+                <form method="post" action="https://echo.htmlacademy.ru">
                     <label for="header-email">Электронная форма</label>
-                    <input type="text" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта">
+                    <input type="email" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта" required>
                     <label for="header-password">Пароль</label>
-                    <input type="password" class="popup-pass form" id="header-password" name="password" placeholder="Пароль">
-                    <a href="" class="popup-btn btn">Войти</a>
-                    <span class="pass-help">
-                        <a href="#">Забыли пароль?</a>
-                    </span>
-                    <span class="new-reg">
-                        <a href="#">Новая регистрация</a>
-                    </span>
-                </div>
+                    <input type="password" class="popup-pass form" id="header-password" name="password" placeholder="Пароль" required>
+                    <button type="submit" class="popup-btn btn">Войти</button>
+                    <a href="#" class="pass-help">Забыли пароль?</a>
+                    <a href="#" class="new-reg">Новая регистрация</a>
+                </form>
             </li>
             <li class="cart">Корзина</li>
         </ul>
@@ -104,16 +100,12 @@
         <section class="stock-first">
             <h3 class="promo-head-first">Малинка даром!</h3>
             <p class="promo-text-first">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</p>
-            <p class="promo-button-first btn">
-                <a href="#">Хочу варенье!</a>
-            </p>
+            <a href="#" class="promo-button-first btn">Хочу варенье!</a>
         </section>
         <section class="stock-second">
             <h3 class="promo-head-second">Шоколадки даром!</h3>
             <p class="promo-text-action">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-            <p class="promo-button-second btn">
-                <a href="#">Хочу шоколадки!</a>
-            </p>
+            <a href="#" class="promo-button-second btn">Хочу шоколадки!</a>
         </section>
 
 
@@ -164,19 +156,19 @@
             <h2 class="about-us-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <ul class="about-us">
                 <li>
-                    <img src="img/ice-cream.svg" width="49" height="49" alt="О нашем производстве" tabindex=0> Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+                    <img src="img/ice-cream.svg" width="49" height="49" alt="О нашем производстве"> Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
                     и проверенных временем технологий.
                 </li>
                 <li>
-                    <img src="img/eco.svg" width="49" height="49" alt="О наших ингредиентах" tabindex=0> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+                    <img src="img/eco.svg" width="49" height="49" alt="О наших ингредиентах"> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
                     ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                 </li>
                 <li>
-                    <img src="img/cow.svg" width="49" height="49" alt="О наших партнерах" tabindex=0> Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+                    <img src="img/cow.svg" width="49" height="49" alt="О наших партнерах"> Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
                     связывает долговременное сотрудничество.
                 </li>
                 <li>
-                    <img src="img/thermometer.svg" width="49" height="49" alt="О нашей доставке" tabindex=0> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+                    <img src="img/thermometer.svg" width="49" height="49" alt="О нашей доставке"> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
                     растаять в пути и позволяет сохранить превосходный вкус.
                 </li>
             </ul>
@@ -195,9 +187,11 @@
             <h2 class="visually-hidden">Рассылка</h2>
             <p class="send-mail-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
                 не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <label for="mail-input">Электронная почта</label>
-            <input type="email" class="mail-input" id="mail-input" name="mail-input" placeholder="Электроная почта">
-            <button type="submit" class="mail-btn btn">Отправить</button>
+            <form method="post" action="https://echo.htmlacademy.ru">
+                <label for="mail-input">Электронная почта</label>
+                <input type="email" class="mail-input" id="mail-input" name="mail-input" placeholder="Электроная почта">
+                <button type="submit" class="mail-btn btn">Отправить</button>
+            </form>
         </section>
 
 
@@ -258,14 +252,19 @@
 
     <section class="popup feedback-popup">
         <h2 class="feedback-text">Мы обязательно вам ответим!</h2>
-        <label for="popup-name">Как вас зовут?</label>
-        <input type="text" class="feedback-name form" name="popup-name" id="popup-name" placeholder="Как вас зовут?">
-        <label for="popup-email">Ваша почта для ответа?</label>
-        <input type="email" class="feedback-email form" name="popup-email" id="popup-email" placeholder="Ваша почта для ответа?">
-        <label for="popup-textarea">Напишите что-нибудь...</label>
-        <input type="textarea" class="feedback-text form" name="popup-textarea" id="popup-textarea" placeholder="Напишите что-нибудь...">
-        <button type="submit" class="feedback-btn btn">Отправить</button>
-        <button type="buttin" class="feedback-btn-close btn">Закрыть</button>
+        <form method="post" action="https://echo.htmlacademy.ru">
+            <label for="popup-name">Как вас зовут?</label>
+            <input type="text" class="feedback-name form" name="popup-name" id="popup-name" placeholder="Как вас зовут?">
+
+            <label for="popup-email">Ваша почта для ответа?</label>
+            <input type="email" class="feedback-email form" name="popup-email" id="popup-email" placeholder="Ваша почта для ответа?">
+
+            <label for="popup-textarea">Напишите что-нибудь...</label>
+            <textarea class="feedback-text form" name="popup-textarea" id="popup-textarea">Напишите что-нибудь...</textarea>
+
+            <button type="submit" class="feedback-btn btn">Отправить</button>
+            <button type="button" class="feedback-btn-close btn">Закрыть</button>
+        </form>
     </section>
 </body>
 

@@ -15,6 +15,23 @@
             <ul class="site-navigation">
                 <li class="catalog-header-menu">
                     <a href="catalog.html">Каталог</a>
+                    <ul class="catalog-list">
+                        <li class="new-products tit-header">
+                            <a href="#">Новинки</a>
+                        </li>
+                        <li class="cream">
+                            <a href="catalog.html">Сливочное</a>
+                        </li>
+                        <li class="sherbet active-menu">
+                            <a href="#">Щербет</a>
+                        </li>
+                        <li class="fruit ice">
+                            <a href="#">Фруктовый лед</a>
+                        </li>
+                        <li class="melorin">
+                            <a href="#">Мелорин</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="shipping-and-payment">
                     <a href="shipping-and-payment.html">Доставка и оплата</a>
@@ -25,8 +42,25 @@
             </ul>
         </nav>
         <ul class="user-navigation">
-            <li class="search">Поиск</li>
-            <li class="login">Вход</li>
+            <li class="search">
+                <div>Поиск</div>
+                <form method="post" action="https://echo.htmlacademy.ru">
+                    <label for="header-search">Что ищем?</label>
+                    <input type="text" class="popup-search form" id="header-search" name="search" placeholder="Что ищем?" required>
+                </form>
+            </li>
+            <li class="login">
+                <div>Вход</div>
+                <form method="post" action="https://echo.htmlacademy.ru">
+                    <label for="header-email">Электронная форма</label>
+                    <input type="email" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта" required>
+                    <label for="header-password">Пароль</label>
+                    <input type="password" class="popup-pass form" id="header-password" name="password" placeholder="Пароль" required>
+                    <button type="submit" class="popup-btn btn">Войти</button>
+                    <a href="#" class="pass-help">Забыли пароль?</a>
+                    <a href="#" class="new-reg">Новая регистрация</a>
+                </form>
+            </li>
             <li class="cart-added">
                 <div>2 товара</div>
                 <div>
@@ -71,43 +105,49 @@
 
         <section class="filter-catalog">
             <h1 class="cream-icecream"> Сливочное мороженое</h1>
-            <form class="filter-catalog-value" method="get" action="https://echo.htmlacademy.ru">
-                <label>
-                    Сортировка:
-                    <select>
+            <form class="filter-catalog-value" method="post" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <select name="filter-value">
                         <option value="По популярности">по популярности</option>
                         <option value="сначала недорогие">сначала недорогие</option>
                         <option value="сначала дорогие">сначала дорогие</option>
                         <option value="по жирности">по жирности</option>
                     </select>
-                </label>
+                </fieldset>
 
-                <label>Цена: 100 руб. - 500 руб.
-                    <input type="range" id="catalog-price" name="catalog-price" min="100" max="500">
-                </label>
+                <fieldset>
+                    <legend>Цена:</legend>
+                    <label for="price-from">100 руб.</label>
+                    <input type="text" id="price-from" name="price-from">
+                    <label for="price-to">500 руб.</label>
+                    <input type="text" id="price-to" name="price-to">
+                    <div class="double-range-catalog">
+                        <label id="catalog-price" class="visually-hidden">Ценовой диапозон</label>
+                        <input type="range" id="catalog-price" name="catalog-price" class="catalog-range" min="100" max="500">
+                        <div class="catalog-range"></div>
+                    </div>
+                </fieldset>
+
 
                 <fieldset>
                     <legend>Жирность:</legend>
                     <ul>
                         <li class="fat-option">
-                            <label>
-                                <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" value="0%"> 0%
-                            </label>
+                            <label for="filter-fat-zero">0%</label>
+                            <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-zero" value="0%">
                         </li>
                         <li class="fat-option">
-                            <label>
-                                <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" value="10%" checked> до 10%
-                            </label>
+                            <label for="filter-fat-ten">10%</label>
+                            <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-ten" value="10%" checked>
                         </li>
                         <li class="fat-option">
-                            <label>
-                                <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" value="less 30%"> до 30%
-                            </label>
+                            <label for="filter-fat-less">меньше 30%</label>
+                            <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-less" value="less 30%">
                         </li>
                         <li class="fat-option">
-                            <label>
-                                <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" value="more 30%"> выше 30%
-                            </label>
+                            <label for="filter-fat-more">больше 30%</label>
+                            <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-more" value="more 30%">
                         </li>
                     </ul>
                 </fieldset>
@@ -142,7 +182,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button class="submit" class="filter-btn btn">Применить</button>
+                <button type="submit" class="filter-btn btn">Применить</button>
             </form>
         </section>
 
