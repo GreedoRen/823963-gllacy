@@ -43,15 +43,18 @@
             <li class="search">
                 <div>Поиск</div>
                 <div>
-                    <span class="popup-search form">Что ищем</span>
+                    <label for="header-search">Что ищем?</label>
+                    <input type="text" class="popup-search form" id="header-search" name="search" placeholder="Что ищем?">
                 </div>
             </li>
             <li class="login">
                 <div>Вход</div>
                 <div>
-                    <span class="popup-email form">Электронная почта</span>
-                    <span class="popup-pass form">Пароль</span>
-                    <span class="popup-btn btn">Войти</span>
+                    <label for="header-email">Электронная форма</label>
+                    <input type="text" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта">
+                    <label for="header-password">Пароль</label>
+                    <input type="password" class="popup-pass form" id="header-password" name="password" placeholder="Пароль">
+                    <a href="" class="popup-btn btn">Войти</a>
                     <span class="pass-help">
                         <a href="#">Забыли пароль?</a>
                     </span>
@@ -80,18 +83,18 @@
                 <label for="background-slider-3"></label>
             </div>
             <div>
-                <img src="img/slider-icecream1.png" width="1045" height="881" alt="Крем-брюле с пломбиром">
+                <img src="img/slider-icecream1.png" width="1045" height="881" alt="Акция: Крем-брюле с пломбиром">
                 <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
                 <a class="slider-btn btn" href="#">Дайте оба!</a>
             </div>
             <div>
-                
-                <img src="img/slider-icecream2.png" width="1065" height="859" alt>
+
+                <img src="img/slider-icecream2.png" width="1065" height="859" alt="Акция: Шоколадный пломбир и лимонный сорбет">
                 <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
                 <a class="slider-btn btn" href="#">Дайте оба!</a>
             </div>
             <div>
-                <img src="img/slider-icecream3.png" width="1079" height="854" alt>
+                <img src="img/slider-icecream3.png" width="1079" height="854" alt="Акция: Пломбир с помадкой и клубничный щербет">
                 <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
                 <a class="slider-btn btn" href="#">Дайте оба!</a>
             </div>
@@ -161,30 +164,26 @@
             <h2 class="about-us-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <ul class="about-us">
                 <li>
-                    <img src="img/ice-cream.svg" width="49" height="49" alt="О нас">
-                    Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
-                    временем технологий.
+                    <img src="img/ice-cream.svg" width="49" height="49" alt="О нашем производстве" tabindex=0> Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+                    и проверенных временем технологий.
                 </li>
                 <li>
-                    <img src="img/eco.svg" width="49" height="49" alt="О нас">
-                    Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
-                    и добавки произведены из натурального, экологически чистого сырья.
+                    <img src="img/eco.svg" width="49" height="49" alt="О наших ингредиентах" tabindex=0> Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+                    ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                 </li>
                 <li>
-                    <img src="img/cow.svg" width="49" height="49" alt="О нас">
-                    Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
-                    сотрудничество.
+                    <img src="img/cow.svg" width="49" height="49" alt="О наших партнерах" tabindex=0> Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+                    связывает долговременное сотрудничество.
                 </li>
                 <li>
-                    <img src="img/thermometer.svg" width="49" height="49" alt="О нас">
-                    Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути
-                    и позволяет сохранить превосходный вкус.
+                    <img src="img/thermometer.svg" width="49" height="49" alt="О нашей доставке" tabindex=0> Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+                    растаять в пути и позволяет сохранить превосходный вкус.
                 </li>
             </ul>
         </section>
 
 
-        <article class="blog">
+        <article class="blog" tabindex=0>
             <h2 class="visually-hidden">Блог</h2>
             <p class="blog-text">Новое в нашем блоге</p>
             <p class="new-article">
@@ -196,8 +195,9 @@
             <h2 class="visually-hidden">Рассылка</h2>
             <p class="send-mail-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
                 не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <span class="mail-input">Электронная почта</span>
-            <span class="mail-btn btn">Отправить</span>
+            <label for="mail-input">Электронная почта</label>
+            <input type="email" class="mail-input" id="mail-input" name="mail-input" placeholder="Электроная почта">
+            <button type="submit" class="mail-btn btn">Отправить</button>
         </section>
 
 
@@ -258,10 +258,14 @@
 
     <section class="popup feedback-popup">
         <h2 class="feedback-text">Мы обязательно вам ответим!</h2>
-        <span class="feedback-name form">Как вас зовут?</span>
-        <span class="feedback-email form">Ваша почта для ответа?</span>
-        <span class="feedback-text form">Напишите что-нибудь...</span>
-        <span class="feedback-btn btn">Отправить</span>
+        <label for="popup-name">Как вас зовут?</label>
+        <input type="text" class="feedback-name form" name="popup-name" id="popup-name" placeholder="Как вас зовут?">
+        <label for="popup-email">Ваша почта для ответа?</label>
+        <input type="email" class="feedback-email form" name="popup-email" id="popup-email" placeholder="Ваша почта для ответа?">
+        <label for="popup-textarea">Напишите что-нибудь...</label>
+        <input type="textarea" class="feedback-text form" name="popup-textarea" id="popup-textarea" placeholder="Напишите что-нибудь...">
+        <button type="submit" class="feedback-btn btn">Отправить</button>
+        <button type="buttin" class="feedback-btn-close btn">Закрыть</button>
     </section>
 </body>
 
