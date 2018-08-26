@@ -37,12 +37,31 @@ a {
   color: #ffffff;
 }
 
+
+.drop-down .drop-down-item {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .catalog-list{
   border-radius: 5px;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   width: 143px;
-  height: 171px;
   align-items: center;
   justify-content: center;
 }
@@ -62,15 +81,15 @@ a {
   line-height: 16px;
 }
 
-.catalog-menu{
+/* .catalog-menu{
   width: 87px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.catalog-menu:hover {
+/* .catalog-menu:hover {
   width: 87px;
   height: 32px;
   display: flex;
@@ -84,16 +103,16 @@ a {
 .catalog-menu:active {
   background-color: rgba(248, 247, 244, 0.988);
   box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
-}
+} */
 
 
 .btn {
-    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
-    border-radius: 15px;
-    color: #ffffff;
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+  border-radius: 15px;
+  color: #ffffff;
 }
 
 
@@ -151,15 +170,15 @@ a {
   text-decoration: underline;
 }
 
-.search-div {
+/* .search-div {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
   width: 33px;
   height: 33px;
   display: flex;
-}
+} */
 
-.search-popup {
+/* .search-popup {
   border-radius: 6px;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -168,18 +187,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.popup-search{
+/* .popup-search{
   border-radius: 6px;
   background-color: rgb(248, 247, 244);
-  /*box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);*/
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   width: 315px;
   height: 48px;
 
-}
+} */
 
-.login {
+/* .login {
   border-radius: 6px;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -188,31 +207,31 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
+} */
+/*
 .login-div {
   background-color: rgb(248, 247, 244, 0.2);
   width: 93px;
   height: 32px;
   color: #ffffff;
-}
+} */
 
-.popup-btn {
+/* .popup-btn {
   background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0,);
+  box-shadow: 0px 1px 2px 0px rgb(172, 16, 0);
   width: 100px;
-  height: 44px;
+  height: 44px; */
 
 }
 
-.login a{
+/* .login a{
   color: #323232;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  text-decoration: underline;
+  text-decoration: underline; */
 
 
 }
@@ -224,8 +243,6 @@ a {
   height: 33px;
   }
 
-
-}
 /*-------------Доделать------------*/
 
 /*-------------Доделать попапы------------*/
@@ -258,15 +275,8 @@ a {
   line-height: 44px;
   color: #ffffff;
 
-
-  border-radius: 30px;
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   width: 280px;
   height: 65px;
-
 }
 
 .stock-first {
@@ -290,16 +300,8 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-color: #28070f;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  border-radius: 15px;
   width: 165px;
   height: 46px;
-  text-align: right;
 }
 
 .stock-second {
@@ -323,16 +325,8 @@ a {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-color: #28070f;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  border-radius: 15px;
   width: 165px;
   height: 46px;
-  text-align: right;
 }
 
 .product-roster img{
@@ -393,14 +387,14 @@ a {
 }
 
 .blog p {
-  font-size 16px;
+  font-size: 16px;
   line-height: 22px;
   color: #000000;
   font-weight: 400;
 }
 
 .blog a {
-  font-size 24px;
+  font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
@@ -503,11 +497,12 @@ a {
   text-decoration: underline;
 }
 
-.popup {
+/* .popup {
   background-color: #f8f7f4;
   color: #323232;
   border-radius: 15px;
-}
+ } */
+
 
 .feedback-popup {
   width: 480px;
@@ -528,7 +523,7 @@ a {
   font-weight: bold;
 }
 */
-
+/*
 .cart-added {
   background-color: rgb(248, 247, 244);
   border-radius: 15px;
@@ -542,7 +537,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-
+*/
 .cart-preview-btn {
   background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -594,7 +589,7 @@ legend {
 select {
   background-color: rgba(255, 255, 255, 0.2);
   width: 194px;
-  height: 37px;
+  /* height: 37px; */
   border-radius: 20px;
   color: rgba(255, 255, 255, 1);
 }
@@ -681,17 +676,10 @@ select:hover {
 }
 
 .catalog-products a {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  border-radius: 20px;
-  width: 200px;
-  height: 44px;
 }
 
 /* Поменять размеры кнопок*/

@@ -8,7 +8,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-</head>
 
 <body>
   <header class="main-header">
@@ -16,10 +15,10 @@
       <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
     </a>
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <ul class="site-navigation drop-down">
         <li class="catalog-header-menu">
           <a href="catalog.html" class="catalog-menu">Каталог</a>
-          <ul class="catalog-list">
+          <ul class="catalog-list drop-down-item">
             <li class="new-products tit-header">
               <a href="#">Новинки</a>
             </li>
@@ -46,16 +45,16 @@
       </ul>
     </nav>
     <ul class="user-navigation">
-      <li class="search">
+      <li class="search drop-down">
         <div>Поиск</div>
-        <form method="post" action="https://echo.htmlacademy.ru">
+        <form method="post" action="https://echo.htmlacademy.ru" class="drop-down-item">
           <label for="header-search">Что ищем?</label>
           <input type="text" class="popup-search form" id="header-search" name="search" placeholder="Что ищем?" required>
         </form>
       </li>
-      <li class="login">
+      <li class="login drop-down">
         <div>Вход</div>
-        <form method="post" action="https://echo.htmlacademy.ru">
+        <form method="post" action="https://echo.htmlacademy.ru" class="drop-down-item">
           <label for="header-email">Электронная форма</label>
           <input type="email" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта" required>
           <label for="header-password">Пароль</label>
@@ -65,9 +64,9 @@
           <a href="#" class="new-reg">Новая регистрация</a>
         </form>
       </li>
-      <li class="cart-added">
+      <li class="cart-added drop-down">
         <div>2 товара</div>
-        <div>
+        <div class="drop-down-item">
           <table>
             <tr>
               <td>Удалить</td>
@@ -186,7 +185,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="filter-btn btn">Применить</button>
+        <button type="submit" class="filter-btn">Применить</button>
       </form>
     </section>
 
@@ -200,7 +199,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-1">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-1 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -211,7 +210,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочно-кофейное с кусочками шоколада</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-2">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-2 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -222,7 +221,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочно-клубничное с присыпкой из белого шоколада</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-3">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-3 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -233,7 +232,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочное крем-брюле с карамельной подливкой</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-4">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-4 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -244,7 +243,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочное с брусничным джемом</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-5">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-5 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -255,7 +254,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочно-черничное с цельными ягодами черники</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-6">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-6 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -266,7 +265,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочно-лимонное с карамельной присыпкой</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-7">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-7 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -277,7 +276,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочное с шоколадной стружкой</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item=8">Быстрый просмотр</a>
+          <a href="#" class="catalog-item=8 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -288,7 +287,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочно-ванильное с кусочками шоколада</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-9">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-9 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -299,7 +298,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочноe с ментоловым сиропом</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-10">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-10 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -310,7 +309,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочное с кусочками черного шоколада</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-11">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-11 btn">Быстрый просмотр</a>
         </p>
       </li>
       <li class="catalog-item">
@@ -321,7 +320,7 @@
         </p>
         <h3 class="catalog-item-text">Сливочное с мятным сиропом</h3>
         <p class="catalog-quick-view">
-          <a href="#" class="catalog-item-12">Быстрый просмотр</a>
+          <a href="#" class="catalog-item-12 btn">Быстрый просмотр</a>
         </p>
       </li>
     </ul>

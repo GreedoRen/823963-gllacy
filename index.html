@@ -16,7 +16,7 @@
       <ul class="site-navigation">
         <li class="catalog-header-menu">
           <a href="catalog.html" class="catalog-menu">Каталог</a>
-          <ul class="catalog-list">
+          <ul class="catalog-list hide">
             <li class="tit-header">
               <a href="#">Новинки</a>
             </li>
@@ -45,14 +45,14 @@
     <ul class="user-navigation">
       <li class="search search-popup">
         <div class="search-div">Поиск</div>
-        <form method="post" action="https://echo.htmlacademy.ru">
+        <form method="post" action="https://echo.htmlacademy.ru" class="hide">
           <label for="header-search">Что ищем?</label>
           <input type="text" class="popup-search form" id="header-search" name="search" placeholder="Что ищем?" required>
         </form>
       </li>
       <li class="login popup">
         <div class="login-div">Вход</div>
-        <form method="post" action="https://echo.htmlacademy.ru">
+        <form method="post" action="https://echo.htmlacademy.ru" class="hide">
           <label for="header-email">Электронная форма</label>
           <input type="email" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта" required>
           <label for="header-password">Пароль</label>
@@ -73,7 +73,7 @@
     <h1 class="visually-hidden"> Магазин мороженого "Глейси"</h1>
     <section class="slider-top">
       <h2 class="visually-hidden">Слайдер</h2>
-      <div class="test">
+      <div class="hide">
         <input type="radio" id="background-slider-1" name="background-slider" checked>
         <label for="background-slider-1"></label>
         <input type="radio" id="background-slider-2" name="background-slider">
@@ -86,12 +86,12 @@
         <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
         <a class="slider-btn btn" href="#">Давайте оба!</a>
       </div>
-      <div class="slider-div">
+      <div class="slider-div hide">
         <img src="img/slider-icecream2.png" width="1065" height="859" alt="Акция: Шоколадный пломбир и лимонный сорбет">
         <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
         <a class="slider-btn btn" href="#">Давайте оба!</a>
       </div>
-      <div class="slider-div">
+      <div class="slider-div hide">
         <img src="img/slider-icecream3.png" width="1079" height="854" alt="Акция: Пломбир с помадкой и клубничный щербет">
         <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
         <a class="slider-btn btn" href="#">Давайте оба!</a>
@@ -207,7 +207,7 @@
     <section class="adress-and-map">
       <h2 class="visually-hidden">Адресс</h2>
       <div class="map">
-        <img src="#" width="900" height="435" alt="Наше местоположение на карте">
+        <img src="img/map_index.jpg" width="1200" height="430" alt="Наше местоположение на карте">
       </div>
       <div class="adress">
         <p class="adress-top-text"> Адресс главного офиса и оффлайн-магазина: </p>
@@ -261,7 +261,7 @@
     </div>
   </footer>
 
-  <section class="popup feedback-popup">
+  <section class="popup feedback-popup hide">
     <h2 class="feedback-text">Мы обязательно вам ответим!</h2>
     <form method="post" action="https://echo.htmlacademy.ru">
       <label for="popup-name">Как вас зовут?</label>
