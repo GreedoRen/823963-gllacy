@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", 'Times New Roman', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+
+background-color: #97aca0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.tit-header {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.site-navigation,
+.user-navigation,
+.catalog-list {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #f8f7f4;
+  position: inherit;
+  width: 90px;
+  height: 32px;
+  border-radius: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.header-time {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.header-number {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.slider-text {
+  font-size: 60px;
+  line-height: 60,35px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: 50%;
+}
+
+.slider-btn {
+  width: 168px;
+  height: 47px;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  background-image: linear-gradient(#f26843, #e74a35);
+  box-shadow: 0 2px 2px 0px #9e4334;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#f58669, #ec6f5e);
+  box-shadow: 0 2px 2px 0px #ac1000;
+}
+
+.btn:active {
+  background-image: linear-gradient(#d74632, #e1613e);
+  box-shadow: 0 -2px 2px 0px #ac1000;
+}
+
+.stock-first,
+.stock-second {
+  padding-top: 20px;
+  margin: 20px;
+}
+
+.promo-head-first,
+.promo-head-second {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.promo-text-first,
+.promo-text-second {
+  font-size: 18px;
+  line-height: 22px;
+  display: inline;
+  text-align: center;
+  width: 50px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.promo-button-first,
+.promo-button-second {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+
+}
+
+.stock-first {
+  background-image: url("../img/raspberries_background.jpg");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 230px;
+  border-radius: 20px 20px;
+
+}
