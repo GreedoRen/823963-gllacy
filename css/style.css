@@ -285,6 +285,7 @@ a {
 
 .slider-div {
   text-align: center;
+  margin-bottom: 38px;
 }
 
 .slider-div p{
@@ -354,7 +355,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   align-items: center;
   justify-content: space-between;
   margin-left: 27px;
@@ -364,14 +365,12 @@ a {
   width: 560px;
   min-height: 230px;
   margin-right: 26px;
-  margin-top: 60px;
+
 }
 
 .stock-second {
-
   width: 560px;
   min-height: 230px;
-  margin-top: 60px;
 }
 
 .product-roster img{
@@ -415,7 +414,6 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .about-us {
@@ -425,6 +423,7 @@ a {
   border-radius: 20px;
   height: 308px;
   margin-left: 27px;
+  margin-bottom: 40px;
 }
 
 .about-us h2 {
@@ -454,8 +453,8 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-top: 80px;
   margin-left: 27px;
+  margin-bottom: 40px;
 }
 
 .blog {
@@ -513,7 +512,7 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 .adress {
