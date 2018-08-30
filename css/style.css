@@ -36,7 +36,7 @@ a {
   margin: 27px;
   margin-top: 7px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
 }
 
@@ -356,12 +356,11 @@ a {
   padding: 0;
   margin-bottom: 40px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 27px;
 }
 
 .stock-first {
-
   width: 560px;
   min-height: 230px;
   margin-right: 26px;
@@ -414,7 +413,8 @@ a {
 
 .about-us-div{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
 }
 
@@ -891,12 +891,6 @@ select:hover {
   padding: 0;
   margin-left: 27px;
   margin-bottom: 30px;
-}
-
-.paginator li {
-  align-items: flex-end;
-  flex-direction: row-reverse;
-
 }
 
 .paginator-link {
