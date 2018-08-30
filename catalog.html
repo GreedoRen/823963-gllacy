@@ -112,81 +112,87 @@
 
     <section class="filter-catalog">
       <h1 class="cream-icecream"> Сливочное мороженое</h1>
-      <form class="filter-catalog-value" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter-value-field">
-          <legend>Сортировка:</legend>
-          <select name="filter-value">
-            <option value="По популярности">по популярности</option>
-            <option value="сначала недорогие">сначала недорогие</option>
-            <option value="сначала дорогие">сначала дорогие</option>
-            <option value="по жирности">по жирности</option>
-          </select>
-        </fieldset>
+      <div class="filter-catalog-div">
+        <form class="filter-catalog-value" method="post" action="https://echo.htmlacademy.ru">
+          <div class="filter-first">
+            <fieldset class="filter-value-field">
+              <legend>Сортировка:</legend>
+              <select name="filter-value">
+                <option value="По популярности">по популярности</option>
+                <option value="сначала недорогие">сначала недорогие</option>
+                <option value="сначала дорогие">сначала дорогие</option>
+                <option value="по жирности">по жирности</option>
+              </select>
+            </fieldset>
 
-        <fieldset >
-          <legend class="price-value">Цена:
-            <label for="price-from" class="visually-hidden">от</label>
-            <input type="text" id="price-from" name="price-from" value="100">руб.
-             -
-            <label for="price-to" class="visually-hidden">до</label>
-            <input type="text" id="price-to" name="price-to" value="500">руб.
-          </legend>
-        </fieldset>
+            <fieldset>
+              <legend class="price-value">Цена:
+                <label for="price-from" class="visually-hidden">от</label>
+                <input type="text" id="price-from" name="price-from" value="100">руб. -
+                <label for="price-to" class="visually-hidden">до</label>
+                <input type="text" id="price-to" name="price-to" value="500">руб.
+              </legend>
+            </fieldset>
 
-        <fieldset>
-          <legend>Жирность:</legend>
-          <ul class="fat-value">
-            <li class="fat-option">
-              <label for="filter-fat-zero">0%</label>
-              <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-zero" value="0%">
-            </li>
-            <li class="fat-option">
-              <label for="filter-fat-ten">10%</label>
-              <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-ten" value="10%" checked>
-            </li>
-            <li class="fat-option">
-              <label for="filter-fat-less">меньше 30%</label>
-              <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-less" value="less 30%">
-            </li>
-            <li class="fat-option">
-              <label for="filter-fat-more">больше 30%</label>
-              <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-more" value="more 30%">
-            </li>
-          </ul>
-        </fieldset>
+            <fieldset class="filter-fat">
+              <legend>Жирность:</legend>
+              <ul class="fat-value">
+                <li class="fat-option">
+                  <label for="filter-fat-zero">0%</label>
+                  <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-zero" value="0%">
+                </li>
+                <li class="fat-option">
+                  <label for="filter-fat-ten">10%</label>
+                  <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-ten" value="10%" checked>
+                </li>
+                <li class="fat-option">
+                  <label for="filter-fat-less">меньше 30%</label>
+                  <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-less" value="less 30%">
+                </li>
+                <li class="fat-option">
+                  <label for="filter-fat-more">больше 30%</label>
+                  <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-more" value="more 30%">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
-        <fieldset>
-          <legend>Наполнители:</legend>
-          <ul class="filler-value">
-            <li class="filler-option">
-              <label>
-                <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="chocolate" checked>шоколадные
-              </label>
-            </li>
-            <li class="filler-option">
-              <label>
-                <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="sugar-powder" checked>сахарные присыпки
-              </label>
-            </li>
-            <li class="filler-option">
-              <label>
-                <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="fruits">фрукты
-              </label>
-            </li>
-            <li class="filler-option">
-              <label>
-                <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="syrup">сиропы
-              </label>
-            </li>
-            <li class="filler-option">
-              <label>
-                <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="jam">джемы
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit" class="filter-btn">Применить</button>
-      </form>
+          <div class="filter-second">
+            <fieldset class="filter-fill">
+              <legend>Наполнители:</legend>
+              <ul class="filler-value">
+                <li class="filler-option">
+                  <label>
+                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="chocolate" checked>шоколадные
+                  </label>
+                </li>
+                <li class="filler-option">
+                  <label>
+                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="sugar-powder" checked>сахарные
+                    присыпки
+                  </label>
+                </li>
+                <li class="filler-option">
+                  <label>
+                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="fruits">фрукты
+                  </label>
+                </li>
+                <li class="filler-option">
+                  <label>
+                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="syrup">сиропы
+                  </label>
+                </li>
+                <li class="filler-option">
+                  <label>
+                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="jam">джемы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="filter-btn">Применить</button>
+          </div>
+        </form>
+      </div>
     </section>
 
 
@@ -358,39 +364,41 @@
   </main>
 
   <footer class="main-footer">
-    <ul class="footer-social">
-      <li>
-        <a href="#" class="footer-twitter">Twitter</a>
-      </li>
-      <li>
-        <a href="#" class="footer-instagram">Instagram</a>
-      </li>
-      <li>
-        <a href="#" class="footer-facebook">Facebook</a>
-      </li>
-      <li>
-        <a href="#" class="footer-vkontakte">Vkontakte</a>
-      </li>
-    </ul>
-    <ul class="footer-link">
-      <li>
-        <a href="#" class="footer-for-provider">Для поставщиков</a>
-      </li>
-      <li>
-        <a href="#" class="footer-about-production">О производстве</a>
-      </li>
-      <li>
-        <a href="#" class="footer-production">Наши документы</a>
-      </li>
-      <li>
-        <a href="#" class="footer-eco-standarts">Экологические стандарты</a>
-      </li>
-    </ul>
-    <div class="footer-copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
-        <p class="text-copyright">Сделано в HTML Academy © 2017</p>
-      </a>
+    <div class="footer-container">
+      <ul class="footer-social">
+        <li>
+          <a href="#" class="footer-twitter">Twitter</a>
+        </li>
+        <li>
+          <a href="#" class="footer-instagram">Instagram</a>
+        </li>
+        <li>
+          <a href="#" class="footer-facebook">Facebook</a>
+        </li>
+        <li>
+          <a href="#" class="footer-vkontakte">Vkontakte</a>
+        </li>
+      </ul>
+      <ul class="footer-link">
+        <li>
+          <a href="#" class="footer-for-provider">Для поставщиков</a>
+        </li>
+        <li>
+          <a href="#" class="footer-about-production">О производстве</a>
+        </li>
+        <li>
+          <a href="#" class="footer-production">Наши документы</a>
+        </li>
+        <li>
+          <a href="#" class="footer-eco-standarts">Экологические стандарты</a>
+        </li>
+      </ul>
+      <div class="footer-copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+          <p class="text-copyright">Сделано в HTML Academy © 2017</p>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
