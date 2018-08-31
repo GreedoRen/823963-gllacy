@@ -9,6 +9,7 @@ body {
 
   background-color: #97aca0;
   background-position: top center;
+
 }
 
 html {
@@ -446,25 +447,12 @@ img {
 .product-list {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .product-roster {
-  margin-left: 26px;
-  width: 267px;
+  width: 25%;
   margin-bottom: 30px;
-  /* padding-left: 13px; */
-  padding-right: 13px;
-}
-
-.product-roster:first-child {
-  margin-left: 0;
-}
-
- /* .roster-2 {
-  padding-left: 13px;
-} */
-
-.roster-3 {
   padding-left: 13px;
 }
 
@@ -478,9 +466,10 @@ img {
   background-image: url(../img/wafer_background.jpg);
   background-repeat: no-repeat;
   background-color: #e9dcbf;
+  background-size: cover;
   border-radius: 20px;
+
   height: 308px;
-  margin-left: 27px;
   margin-bottom: 40px;
 }
 
@@ -495,6 +484,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .about-us li {
@@ -529,7 +519,6 @@ img {
  background-color: #ffffff;
  border-radius: 20px;
  margin-right: 13px;
- margin-left: 27px;
 }
 
 .blog p {
@@ -658,6 +647,12 @@ img {
   width: 50%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.footer-link li {
+  width: 50%;
 }
 
 .footer-copyright {
@@ -807,10 +802,6 @@ img {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-
-/* .filter-fat {
-  width: 416px;
-} */
 
 .filter-fill {
   /* width: 704px; */
