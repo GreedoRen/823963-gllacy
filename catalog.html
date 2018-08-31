@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header-logo" href="index.html">
       <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
     </a>
@@ -90,12 +90,14 @@
         </div>
       </li>
     </ul>
-    <p class="header-time">С 10 до 20, ужедневно</p>
-    <p class="header-number">8 812 450-25-25</p>
+    <div class="header-div">
+      <p class="header-time">С 10 до 20, ужедневно</p>
+      <p class="header-number">8 812 450-25-25</p>
+    </div>
   </header>
 
-  <main class="catalog-main">
-    <section class="breadcrumbs">
+  <main class="catalog-main container">
+    <section class="breadcrumbs container">
       <h2 class="visually-hidden">Навигационная цепочка</h2>
       <ul class="breadcrumbs-list">
         <li>
@@ -110,12 +112,12 @@
       </ul>
     </section>
 
-    <section class="filter-catalog">
+    <section class="filter-catalog container">
       <h1 class="cream-icecream"> Сливочное мороженое</h1>
       <div class="filter-catalog-div">
         <form class="filter-catalog-value" method="post" action="https://echo.htmlacademy.ru">
           <div class="filter-first">
-            <fieldset class="filter-value-field">
+            <fieldset class="filter-value-field fieldset">
               <legend>Сортировка:</legend>
               <select name="filter-value">
                 <option value="По популярности">по популярности</option>
@@ -125,7 +127,7 @@
               </select>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="fieldset">
               <legend class="price-value">Цена:
                 <label for="price-from" class="visually-hidden">от</label>
                 <input type="text" id="price-from" name="price-from" value="100">руб. -
@@ -134,57 +136,57 @@
               </legend>
             </fieldset>
 
-            <fieldset class="filter-fat">
+            <fieldset class="filter-fat fieldset">
               <legend>Жирность:</legend>
               <ul class="fat-value">
                 <li class="fat-option">
                   <label for="filter-fat-zero">0%</label>
-                  <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-zero" value="0%">
+                  <input type="radio" class="catalog-filter-fat" name="filter fat" id="filter-fat-zero" value="0%">
                 </li>
                 <li class="fat-option">
                   <label for="filter-fat-ten">10%</label>
-                  <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-ten" value="10%" checked>
+                  <input type="radio" class="catalog-filter-fat" name="filter fat" id="filter-fat-ten" value="10%" checked>
                 </li>
                 <li class="fat-option">
                   <label for="filter-fat-less">меньше 30%</label>
-                  <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-less" value="less 30%">
+                  <input type="radio" class="catalog-filter-fat" name="filter fat" id="filter-fat-less" value="less 30%">
                 </li>
                 <li class="fat-option">
                   <label for="filter-fat-more">больше 30%</label>
-                  <input type="radio" class="visually-hidden catalog-filter-fat" name="filter fat" id="filter-fat-more" value="more 30%">
+                  <input type="radio" class="catalog-filter-fat" name="filter fat" id="filter-fat-more" value="more 30%">
                 </li>
               </ul>
             </fieldset>
           </div>
 
           <div class="filter-second">
-            <fieldset class="filter-fill">
+            <fieldset class="filter-fill fieldset">
               <legend>Наполнители:</legend>
               <ul class="filler-value">
                 <li class="filler-option">
                   <label>
-                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="chocolate" checked>шоколадные
+                    <input type="checkbox" class="catalog-filter-filler" name="filter-filler" value="chocolate" checked>шоколадные
                   </label>
                 </li>
                 <li class="filler-option">
                   <label>
-                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="sugar-powder" checked>сахарные
+                    <input type="checkbox" class="catalog-filter-filler" name="filter-filler" value="sugar-powder" checked>сахарные
                     присыпки
                   </label>
                 </li>
                 <li class="filler-option">
                   <label>
-                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="fruits">фрукты
+                    <input type="checkbox" class="catalog-filter-filler" name="filter-filler" value="fruits">фрукты
                   </label>
                 </li>
                 <li class="filler-option">
                   <label>
-                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="syrup">сиропы
+                    <input type="checkbox" class="catalog-filter-filler" name="filter-filler" value="syrup">сиропы
                   </label>
                 </li>
                 <li class="filler-option">
                   <label>
-                    <input type="checkbox" class="visually-hidden catalog-filter-filler" name="filter-filler" value="jam">джемы
+                    <input type="checkbox" class="catalog-filter-filler" name="filter-filler" value="jam">джемы
                   </label>
                 </li>
               </ul>
@@ -196,7 +198,7 @@
     </section>
 
 
-    <ul class="catalog-products">
+    <ul class="catalog-products container">
       <li class="catalog-item">
         <img src="img/catalog-icecream1.jpg" height="267" width="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
         <p class="product-price">
@@ -360,45 +362,44 @@
         </ul>
       </nav>
     </section>
-
   </main>
 
-  <footer class="main-footer">
-    <div class="footer-container">
-      <ul class="footer-social">
-        <li>
-          <a href="#" class="footer-twitter">Twitter</a>
-        </li>
-        <li>
-          <a href="#" class="footer-instagram">Instagram</a>
-        </li>
-        <li>
-          <a href="#" class="footer-facebook">Facebook</a>
-        </li>
-        <li>
-          <a href="#" class="footer-vkontakte">Vkontakte</a>
-        </li>
-      </ul>
-      <ul class="footer-link">
-        <li>
-          <a href="#" class="footer-for-provider">Для поставщиков</a>
-        </li>
-        <li>
-          <a href="#" class="footer-about-production">О производстве</a>
-        </li>
-        <li>
-          <a href="#" class="footer-production">Наши документы</a>
-        </li>
-        <li>
-          <a href="#" class="footer-eco-standarts">Экологические стандарты</a>
-        </li>
-      </ul>
-      <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
-          <p class="text-copyright">Сделано в HTML Academy © 2017</p>
-        </a>
-      </div>
+  <footer class="main-footer container">
+    <ul class="footer-social">
+      <li>
+        <a href="#" class="footer-twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="#" class="footer-instagram">Instagram</a>
+      </li>
+      <li>
+        <a href="#" class="footer-facebook">Facebook</a>
+      </li>
+      <li>
+        <a href="#" class="footer-vkontakte">Vkontakte</a>
+      </li>
+    </ul>
+    <ul class="footer-link">
+      <li>
+        <a href="#" class="footer-for-provider">Для поставщиков</a>
+      </li>
+      <li>
+        <a href="#" class="footer-about-production">О производстве</a>
+      </li>
+      <li>
+        <a href="#" class="footer-production">Наши документы</a>
+      </li>
+      <li>
+        <a href="#" class="footer-eco-standarts">Экологические стандарты</a>
+      </li>
+    </ul>
+    <div class="footer-copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+        <p class="text-copyright">Сделано в
+          <span>HTML Academy</span>
+          © 2017</p>
+      </a>
     </div>
   </footer>
 </body>

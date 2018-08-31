@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header container">
     <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -64,14 +64,15 @@
       </li>
       <li class="cart">Корзина</li>
     </ul>
-    <p class="header-time">С 10 до 20, ужедневно</p>
-    <p class="header-number">8 812 450-25-25</p>
-
+    <div class="header-div">
+      <p class="header-time">С 10 до 20, ужедневно</p>
+      <p class="header-number">8 812 450-25-25</p>
+    </div>
   </header>
 
-  <main class="container">
+  <main>
     <h1 class="visually-hidden"> Магазин мороженого "Глейси"</h1>
-    <section class="slider-top">
+    <section class="slider-top container">
       <h2 class="visually-hidden">Слайдер</h2>
       <div class="hide">
         <input type="radio" id="background-slider-1" name="background-slider" checked>
@@ -99,24 +100,24 @@
     </section>
 
 
-    <div class="stock-container">
-      <section class="stock-first">
+    <div class="stock-container container">
+      <section class="stock-first stock">
         <h3 class="promo-head-first">Малинка даром!</h3>
         <p class="promo-text-first">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья
           бесплатно
         </p>
-        <a href="#" class="promo-button-first btn">Хочу варенье!</a>
+        <a href="#" class="promo-button btn">Хочу варенье!</a>
       </section>
-      <section class="stock-second">
+      <section class="stock-second stock">
         <h3 class="promo-head-second">Шоколадки даром!</h3>
         <p class="promo-text-second">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
           совершенно бесплатно</p>
-        <a href="#" class="promo-button-second btn">Хочу шоколадки!</a>
+        <a href="#" class="promo-button btn">Хочу шоколадки!</a>
       </section>
     </div>
 
 
-    <ul class="product-list">
+    <ul class="product-list container">
       <li class="product-roster product-top roster-1">
         <img src="img/index-icecream1.jpg" width="267" height="267" alt="Сливочное с апельсином">
         <p class="product-price">
@@ -159,7 +160,7 @@
       </li>
     </ul>
 
-    <div class="about-us-div">
+    <div class="about-us-div container">
       <section class="about-us">
         <h2 class="about-us-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства
           на развес</h2>
@@ -186,8 +187,8 @@
       </section>
     </div>
 
-    <div class="blog-mail">
-      <article class="blog">
+    <div class="blog-mail container">
+      <article class="blog mailing">
         <h2 class="visually-hidden">Блог</h2>
         <p class="blog-text">Новое в нашем блоге</p>
         <p class="new-article">
@@ -195,7 +196,7 @@
         </p>
       </article>
 
-      <section class="send-mail">
+      <section class="send-mail mailing">
         <div class="send-mail-background">
           <h2 class="visually-hidden">Рассылка</h2>
           <p class="send-mail-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что
@@ -215,57 +216,57 @@
       <div class="map">
         <img src="img/map_index.jpg" width="1200" height="430" alt="Наше местоположение на карте">
       </div>
-      <div class="adress">
-        <p class="adress-top-text"> Адресс главного офиса и оффлайн-магазина: </p>
-        <p class="adress-location">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-        <p class="phone-text"> Для заказов по телефону:</p>
-        <p class="phone-adress-number">8 812 450-25-25</p>
-        <p class="additional-time-text">(C 10 до 20 ежедневно)</p>
-        <p class="feedback-btn btn">
-          <a href="#">Форма обратной связи</a>
-        </p>
+      <div class="container map-adress">
+        <div class="adress">
+          <p class="adress-top-text"> Адресс главного офиса и оффлайн-магазина: </p>
+          <p class="adress-location">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="phone-text"> Для заказов по телефону:</p>
+          <p class="phone-adress-number">8 812 450-25-25</p>
+          <p class="additional-time-text">(C 10 до 20 ежедневно)</p>
+          <p class="feedback-btn btn">
+            <a href="#">Форма обратной связи</a>
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="main-footer">
-    <div class="footer-container">
-      <ul class="footer-social">
-        <li>
-          <a href="#" class="footer-twitter">Twitter</a>
-        </li>
-        <li>
-          <a href="#" class="footer-instagram">Instagram</a>
-        </li>
-        <li>
-          <a href="#" class="footer-facebook">Facebook</a>
-        </li>
-        <li>
-          <a href="#" class="footer-vkontakte">Vkontakte</a>
-        </li>
-      </ul>
-      <ul class="footer-link">
-        <li>
-          <a href="#" class="footer-for-provider">Для поставщиков</a>
-        </li>
-        <li>
-          <a href="#" class="footer-about-production">О производстве</a>
-        </li>
-        <li>
-          <a href="#" class="footer-production">Наши документы</a>
-        </li>
-        <li>
-          <a href="#" class="footer-eco-standarts">Экологические стандарты</a>
-        </li>
-      </ul>
-      <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
-          <p class="text-copyright">Сделано в
-            <span>HTML Academy</span>
-            © 2017</p>
-        </a>
-      </div>
+  <footer class="main-footer container">
+    <ul class="footer-social">
+      <li>
+        <a href="#" class="footer-twitter">Twitter</a>
+      </li>
+      <li>
+        <a href="#" class="footer-instagram">Instagram</a>
+      </li>
+      <li>
+        <a href="#" class="footer-facebook">Facebook</a>
+      </li>
+      <li>
+        <a href="#" class="footer-vkontakte">Vkontakte</a>
+      </li>
+    </ul>
+    <ul class="footer-link">
+      <li>
+        <a href="#" class="footer-for-provider">Для поставщиков</a>
+      </li>
+      <li>
+        <a href="#" class="footer-about-production">О производстве</a>
+      </li>
+      <li>
+        <a href="#" class="footer-production">Наши документы</a>
+      </li>
+      <li>
+        <a href="#" class="footer-eco-standarts">Экологические стандарты</a>
+      </li>
+    </ul>
+    <div class="footer-copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+        <p class="text-copyright">Сделано в
+          <span>HTML Academy</span>
+          © 2017</p>
+      </a>
     </div>
   </footer>
 
