@@ -7,8 +7,8 @@ body {
   font-weight: bold;
   color: #ffffff;
 
-  /* background-color: #97aca0;
-  background-position: top center; */
+  background-color: #97aca0;
+  background-position: top center;
 
 }
 
@@ -61,6 +61,15 @@ img {
   background-image: url("../img/slider-icecream3.png");
 }
 
+.slider-list {
+  position: relative;
+}
+
+.slider-list img {
+  position: absolute;
+  top: 0px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -73,7 +82,6 @@ img {
   align-items: center;
   /* justify-content: flex-start; */
   flex-wrap: wrap;
-
 }
 
 .main-navigation a{
@@ -638,7 +646,6 @@ img {
 
 .promo-button {
   padding: 10px 20px;
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -761,6 +768,8 @@ img {
   margin: 0;
   padding-right: 40px;
   padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 19px;
 }
 
 .about-list img{
@@ -869,6 +878,8 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+  padding: 10px 20px;
+  margin-left: 10px;
 }
 
 .send-mail-background {
@@ -877,6 +888,21 @@ img {
   background-size: cover;
   padding-bottom: 40px;
 }
+
+.mail-box {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.mail-input {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  width: 65%;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
 
 .adress-and-map {
   display: flex;
@@ -907,6 +933,7 @@ img {
 .map-adress {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .adress {
@@ -921,9 +948,29 @@ img {
   margin: 0;
 }
 
-.adress-top-text {
+.adress p {
+  margin: 0;
+  padding: 0;
+  padding-left: 27px;
+}
 
+.adress .adress-location {
+  padding-right: 28px;
+  padding-bottom: 20px;
+}
 
+.adress .adress-top-text {
+  padding-top: 28px;
+}
+
+.adress .additional-time-text {
+  padding-bottom: 29px;
+}
+
+.adress .feedback-btn {
+  padding: 10px 25px;
+  text-align: center;
+  margin-left: 30px;
 }
 
 .adress-top-text,
@@ -950,9 +997,6 @@ img {
   line-height: 22px;
   font-weight: 400;
 }
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
 
 .feedback-btn a{
   font-size: 18px;
@@ -1020,6 +1064,7 @@ img {
 .footer-for-provider::before {
   position: absolute;
   background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
   width: 15px;
   height: 15px;
   content: "";
@@ -1104,6 +1149,8 @@ img {
 .breadcrumbs {
   margin-bottom: 10px;
   padding: 0;
+  margin: 0;
+  position: relative;
 }
 
 .breadcrumbs ul {
@@ -1112,6 +1159,11 @@ img {
 
 .breadcrumbs li{
   padding-right: 20px;
+}
+
+.breadcrumbs-list {
+  position: absolute;
+  top: -100px;
 }
 
 .breadcrumbs-list a{
@@ -1249,6 +1301,10 @@ select:hover {
   color: #323232;
 }
 
+.catalog-item {
+  position: relative;
+}
+
 .catalog-products {
   display: flex;
   flex-wrap: wrap;
@@ -1278,6 +1334,7 @@ select:hover {
   line-height: 22px;
   font-weight: 500;
   text-decoration: underline;
+  text-align: center;
 }
 
 .catalog-products li:hover {
@@ -1291,6 +1348,11 @@ select:hover {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
+  padding: 10px 19px;
+}
+
+.catalog-products p {
+  text-align: center;
 }
 
 /* Поменять размеры кнопок*/
