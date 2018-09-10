@@ -47,11 +47,12 @@
         <li class="search search-popup">
           <div class="search-div">
             <span class="visually-hidden">Поиск</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="search-svg"
               x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
               width="17px" height="17px">
               <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
                 fill="#FFFFFF" />
+            </svg>
           </div>
           <form method="post" action="https://echo.htmlacademy.ru" class="hide search-submenu">
             <label for="header-search" class="hide">Что ищем?</label>
@@ -60,27 +61,28 @@
           </form>
         </li>
         <li class="login popup">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="login-svg"
             x="0px" y="0px" width="21px" height="21px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;"
             xml:space="preserve">
             <path d="M331.685,425.378c-7.478,7.479-7.478,19.584,0,27.043c7.479,7.478,19.584,7.478,27.043,0l131.943-131.962     c3.979-3.979,5.681-9.276,5.412-14.479c0.269-5.221-1.434-10.499-5.412-14.477L358.728,159.56     c-7.459-7.478-19.584-7.478-27.043,0c-7.478,7.478-7.478,19.584,0,27.042l100.272,100.272H19.125C8.568,286.875,0,295.443,0,306     c0,10.557,8.568,19.125,19.125,19.125h412.832L331.685,425.378z M535.5,38.25H153c-42.247,0-76.5,34.253-76.5,76.5v76.5h38.25     v-76.5c0-21.114,17.117-38.25,38.25-38.25h382.5c21.133,0,38.25,17.136,38.25,38.25v382.5c0,21.114-17.117,38.25-38.25,38.25H153     c-21.133,0-38.25-17.117-38.25-38.25v-76.5H76.5v76.5c0,42.247,34.253,76.5,76.5,76.5h382.5c42.247,0,76.5-34.253,76.5-76.5     v-382.5C612,72.503,577.747,38.25,535.5,38.25z"
               fill="#FFFFFF" />
-            <div class="login-div">Вход</div>
-            <form method="post" action="https://echo.htmlacademy.ru" class=" login-form">
-              <label for="header-email" class="visually-hidden">Электронная форма</label>
-              <input type="email" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта"
-                required>
-              <label for="header-password" class="visually-hidden">Пароль</label>
-              <input type="password" class="popup-pass form" id="header-password" name="password" placeholder="Пароль"
-                required>
-              <div class="login-help">
-                <button type="submit" class="popup-btn btn">Войти</button>
-                <div class="add-div">
-                  <a href="#" class="pass-help">Забыли пароль?</a>
-                  <a href="#" class="new-reg">Новая регистрация</a>
-                </div>
+          </svg>
+          <div class="login-div">Вход</div>
+          <form method="post" action="https://echo.htmlacademy.ru" class=" login-form">
+            <label for="header-email" class="visually-hidden">Электронная форма</label>
+            <input type="email" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта"
+              required>
+            <label for="header-password" class="visually-hidden">Пароль</label>
+            <input type="password" class="popup-pass form" id="header-password" name="password" placeholder="Пароль"
+              required>
+            <div class="login-help">
+              <button type="submit" class="popup-btn btn">Войти</button>
+              <div class="add-div">
+                <a href="#" class="pass-help">Забыли пароль?</a>
+                <a href="#" class="new-reg">Новая регистрация</a>
               </div>
-            </form>
+            </div>
+          </form>
         </li>
         <li class="cart">
           <span>Пусто</span>
@@ -132,23 +134,6 @@
             <a class="btn slider-btn" href="#">Давайте оба!</a>
           </li>
         </ul>
-        <!-- <div class="slider-div-1">
-          <div class="slider-container">
-             <img src="img/slider-icecream1.png" width="1045" height="881" alt="Акция: Крем-брюле с пломбиром">
-          </div>
-          <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
-          <a class="slider-btn btn" href="#">Давайте оба!</a>
-        </div>
-        <div class="slider-div hide">
-          <img src="img/slider-icecream2.png" width="1065" height="859" alt="Акция: Шоколадный пломбир и лимонный сорбет">
-          <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
-          <a class="slider-btn btn" href="#">Давайте оба!</a>
-        </div>
-        <div class="slider-div hide">
-          <img src="img/slider-icecream3.png" width="1079" height="854" alt="Акция: Пломбир с помадкой и клубничный щербет">
-          <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
-          <a class="slider-btn btn" href="#">Давайте оба!</a>
-        </div> -->
       </section>
 
 
@@ -156,17 +141,13 @@
         <section class="stock-first stock">
           <h3 class="promo-head-first">Малинка даром!</h3>
           <p class="promo-text-first">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
-            малинового
-            варенья бесплатно
-          </p>
+            малинового варенья бесплатно</p>
           <a href="#" class="promo-button btn">Хочу варенье!</a>
         </section>
         <section class="stock-second stock">
           <h3 class="promo-head-second">Шоколадки даром!</h3>
           <p class="promo-text-second">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
-            присыпки
-            совершенно бесплатно
-          </p>
+            присыпки совершенно бесплатно</p>
           <a href="#" class="promo-button btn">Хочу шоколадки!</a>
         </section>
       </div>
@@ -218,34 +199,27 @@
       <div class="about-us-div container">
         <section class="about-us">
           <h2 class="about-us-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного
-            производства
-            на развес</h2>
+            производства на развес</h2>
           <ul class="about-us-reference">
             <li class="about-list list-1">
-              <img src="img/ice-cream.svg" width="49" height="49" alt="О нашем производстве"> Все наше мороженое
-              изготавливается
-              на собственном производстве, с использованием современного оборудования и проверенных временем
-              технологий.
+              <img src="img/ice-cream.svg" width="49" height="49" alt="О нашем производстве">
+              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
+                оборудования и проверенных временем технологий.</p>
             </li>
             <li class="about-list list-2">
-              <img src="img/cow.svg" width="49" height="49" alt="О наших ингредиентах"> Закупка ингредиентов
-              производится
-              только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
-              сотрудничество.
+              <img src="img/cow.svg" width="49" height="49" alt="О наших ингредиентах">
+              <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+                связывает долговременное сотрудничество.</p>
             </li>
             <li class="about-list list-3">
-              <img src="img/eco.svg" width="49" height="49" alt="О наших партнерах"> Для приготовления мороженого
-              используются
-              настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из
-              натурального,
-              экологически чистого сырья.
+              <img src="img/eco.svg" width="49" height="49" alt="О наших партнерах">
+              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+                дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </li>
             <li class="about-list list-4">
-              <img src="img/thermometer.svg" width="49" height="49" alt="О нашей доставке"> Доставка нашего мороженого
-              до
-              заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет
-              сохранить
-              превосходный вкус.
+              <img src="img/thermometer.svg" width="49" height="49" alt="О нашей доставке">
+              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+                мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
         </section>
