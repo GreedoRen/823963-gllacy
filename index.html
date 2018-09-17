@@ -43,15 +43,13 @@
           </li>
         </ul>
       </nav>
-      <ul class="user-navigation">
+      <ul class="user-navigation index-nav">
         <li class="search search-popup">
           <div class="search-div">
             <span class="visually-hidden">Поиск</span>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="search-svg"
-              x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
-              width="17px" height="17px">
-              <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
-                fill="#FFFFFF"/>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17"
+              viewBox="0 0 17 17">
+              <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
             </svg>
           </div>
           <form method="post" action="https://echo.htmlacademy.ru" class="hide search-submenu">
@@ -61,14 +59,15 @@
           </form>
         </li>
         <li class="login popup">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="login-svg"
-            x="0px" y="0px" width="21px" height="21px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;"
-            xml:space="preserve">
-            <path d="M331.685,425.378c-7.478,7.479-7.478,19.584,0,27.043c7.479,7.478,19.584,7.478,27.043,0l131.943-131.962     c3.979-3.979,5.681-9.276,5.412-14.479c0.269-5.221-1.434-10.499-5.412-14.477L358.728,159.56     c-7.459-7.478-19.584-7.478-27.043,0c-7.478,7.478-7.478,19.584,0,27.042l100.272,100.272H19.125C8.568,286.875,0,295.443,0,306     c0,10.557,8.568,19.125,19.125,19.125h412.832L331.685,425.378z M535.5,38.25H153c-42.247,0-76.5,34.253-76.5,76.5v76.5h38.25     v-76.5c0-21.114,17.117-38.25,38.25-38.25h382.5c21.133,0,38.25,17.136,38.25,38.25v382.5c0,21.114-17.117,38.25-38.25,38.25H153     c-21.133,0-38.25-17.117-38.25-38.25v-76.5H76.5v76.5c0,42.247,34.253,76.5,76.5,76.5h382.5c42.247,0,76.5-34.253,76.5-76.5     v-382.5C612,72.503,577.747,38.25,535.5,38.25z"
-              fill="#FFFFFF" />
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"
+            viewBox="0 0 21 19">
+            <g fill="#fff">
+              <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+              <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+            </g>
           </svg>
           <div class="login-div">Вход</div>
-          <form method="post" action="https://echo.htmlacademy.ru" class=" login-form">
+          <form method="post" action="https://echo.htmlacademy.ru" class="login-form">
             <label for="header-email" class="visually-hidden">Электронная форма</label>
             <input type="email" class="popup-email form" id="header-email" name="email" placeholder="Электронная почта"
               required>
@@ -89,7 +88,7 @@
         </li>
       </ul>
       <div class="header-div">
-        <p class="header-time">С 10 до 20, ужедневно</p>
+        <p class="header-time">С 10 до 20, ежедневно</p>
         <p class="header-number">8 812 450-25-25</p>
       </div>
     </header>
@@ -152,49 +151,42 @@
         </section>
       </div>
 
-
-      <ul class="product-list container">
-        <li class="product-roster product-top roster-1">
-          <img src="img/index-icecream1.jpg" width="267" height="267" alt="Сливочное с апельсином">
-          <p class="product-price">
-            310 Р
-            <span class="product-weight">/кг</span>
-          </p>
-          <p class="product-text">
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          </p>
-        </li>
-        <li class="product-roster product-top roster-2">
-          <img src="img/index-icecream2.jpg" width="267" height="267" alt="Сливочно-кофейное">
-          <p class="product-price">
-            380 Р
-            <span class="product-weight">/кг</span>
-          </p>
-          <p class="product-text">
-            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-          </p>
-        </li>
-        <li class="product-roster product-top roster-3">
-          <img src="img/index-icecream3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-          <p class="product-price">
-            355 Р
-            <span class="product-weight">/кг</span>
-          </p>
-          <p class="product-text">
-            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          </p>
-        </li>
-        <li class="product-roster product-top roster-4">
-          <img src="img/index-icecream4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-          <p class="product-price">
-            415 Р
-            <span class="product-weight">/кг</span>
-          </p>
-          <p class="product-text">
-            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-          </p>
-        </li>
-      </ul>
+      <div class="container product-container">
+        <ul class="product-list">
+          <li class="product-roster product-top roster-1">
+            <div>
+              <img src="img/index-icecream1.jpg" width="267" height="267" alt="Сливочное с апельсином">
+              <p class="product-price">310<span class="product-weight">/кг</span></p>
+              <a href="#" class="product-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a href="#" class="catalog-item-btn btn">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li class="product-roster product-top roster-2">
+            <div>
+              <img src="img/index-icecream2.jpg" width="267" height="267" alt="Сливочно-кофейное">
+              <p class="product-price">380<span class="product-weight">/кг</span></p>
+              <a href="#" class="product-text">Сливочно-кофейное с кусочками шоколада</a>
+              <a href="#" class="catalog-item-btn btn">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li class="product-roster product-top roster-3">
+            <div>
+              <img src="img/index-icecream3.jpg" width="267" height="267" alt="Сливочно-клубничное">
+              <p class="product-price">355<span class="product-weight">/кг</span></p>
+              <a href="#" class="product-text">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <a href="#" class="catalog-item-btn btn">Быстрый просмотр</a>
+            </div>
+          </li>
+          <li class="product-roster product-top roster-4">
+            <div>
+              <img src="img/index-icecream4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
+              <p class="product-price">415<span class="product-weight">/кг</span></p>
+              <a href="#" class="product-text">Сливочное крем-брюле с карамельной подливкой</a>
+              <a href="#" class="catalog-item-btn btn">Быстрый просмотр</a>
+            </div>
+          </li>
+        </ul>
+      </div>
 
       <div class="about-us-div container">
         <section class="about-us">
@@ -241,9 +233,9 @@
             <p class="send-mail-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
               вкусного,
               что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form method="post" action="https://echo.htmlacademy.ru">
+            <form method="post" action="https://echo.htmlacademy.ru" class="mail-form">
               <label for="mail-input" class="visually-hidden">Электронная почта</label>
-              <input type="email" class="mail-input" id="mail-input" name="mail-input" placeholder="Электроная почта">
+              <input type="email" class="mail-input" id="mail-input" name="mail-input" placeholder="Электронная почта">
               <button type="submit" class="mail-btn btn">Отправить</button>
             </form>
           </div>
@@ -252,18 +244,19 @@
 
 
       <section class="adress-and-map">
-        <h2 class="visually-hidden">Адресс</h2>
+        <h2 class="visually-hidden">Адрес</h2>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="430" allowfullscreen tabindex="-1"> </iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+            width="1200" height="430" allowfullscreen tabindex="-1"> </iframe>
           <img src="img/map_index.jpg" width="1200" height="430" alt="Наше местоположение на карте" tabindex="-1">
         </div>
         <div class="container map-adress">
           <div class="adress">
-            <p class="adress-top-text"> Адресс главного офиса и оффлайн-магазина: </p>
+            <p class="adress-top-text"> Адрес главного офиса и офлайн-магазина: </p>
             <p class="adress-location">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
             <p class="phone-text"> Для заказов по телефону:</p>
             <p class="phone-adress-number">8 812 450-25-25</p>
-            <p class="additional-time-text">(C 10 до 20 ежедневно)</p>
+            <p class="additional-time-text">(с 10 до 20 ежедневно)</p>
             <p class="feedback-btn btn">
               <a class="feedback-enter" href="#">Форма обратной связи</a>
             </p>
@@ -319,10 +312,10 @@
           <a href="#" class="footer-for-provider">Для поставщиков</a>
         </li>
         <li>
-          <a href="#" class="footer-about-production">О производстве</a>
+          <a href="#" class="footer-about-production">Наши документы</a>
         </li>
         <li>
-          <a href="#" class="footer-production">Наши документы</a>
+          <a href="#" class="footer-production">О производстве</a>
         </li>
         <li>
           <a href="#" class="footer-eco-standarts">Экологические стандарты</a>
@@ -331,9 +324,7 @@
       <div class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
-          <p class="text-copyright">Сделано в
-            <span class="html-academy">HTML Academy</span>
-            © 2017</p>
+          <p class="text-copyright">Сделано в<span class="html-academy">HTML Academy</span>© 2017</p>
         </a>
       </div>
     </footer>
