@@ -2551,9 +2551,9 @@ input[type="radio"] .visually-hidden {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-  margin-left: 22px;
+  /* margin-left: 22px; */
   margin-bottom: 7px;
-  padding-right: 55px;
+  padding-right: 33px;
 }
 
 .paginator-link {
@@ -2598,7 +2598,7 @@ input[type="radio"] .visually-hidden {
 
 .paginator li {
   position: relative;
-  padding-right: 3px;
+  padding-right: 2px;
 }
 
 .next,
@@ -2613,9 +2613,20 @@ input[type="radio"] .visually-hidden {
   margin-left: 4px;
 }
 
+.next-paginator {
+  top: 3px;
+}
+
 .back-paginator path {
   fill: #ffffff;
 }
+
+.paginator .back-paginator {
+  margin-right: 5px;
+  top: 3px;
+  left: 16px;
+}
+
 
 /* .next::before {
   content: "";
