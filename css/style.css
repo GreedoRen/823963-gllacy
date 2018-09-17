@@ -307,7 +307,7 @@ img {
   fill: #000000;
 }
 
-.search:hover {
+.search:hover:before {
   display: inline-block;
   vertical-align: middle;
 
@@ -1911,8 +1911,8 @@ input[type="radio"] .visually-hidden {
 
 .filter-fill {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: -ms-flexbox;
+  display: flex; */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
