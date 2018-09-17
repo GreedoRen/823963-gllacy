@@ -204,7 +204,7 @@ img {
 }
 
 .catalog-menu-page {
-  padding: 5px 11px;
+  padding: 5px 12px;
 
   background-color: #d07058;
   border-radius: 50px;
@@ -214,9 +214,7 @@ img {
 .active-menu {
   background-color: #d07058;
   color: #ffffff;
-
 }
-
 
 .user-navigation {
   display: -webkit-box;
@@ -1211,7 +1209,8 @@ img {
 }
 
 .mail-input {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 10px 10px;
   width: 67%;
   border-radius: 8px;
@@ -1226,7 +1225,6 @@ img {
   border-radius: 8px;
   outline: none;
 }
-
 .adress-and-map {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1781,6 +1779,10 @@ img {
   padding-right: 21px;
 }
 
+.breadcrumbs-list {
+  position: relative;
+}
+
 .breadcrumbs-list a{
   font-size: 14px;
   line-height: 16px;
@@ -1929,7 +1931,12 @@ input[type="radio"] .visually-hidden {
 
 .filter-fill legend {
   padding-left: 15px;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .filter-value-field legend {
@@ -2156,6 +2163,7 @@ input[type="radio"] .visually-hidden {
 .filter-fat {
   margin: 0;
   padding: 0;
+  padding-bottom: 2px;
 }
 
 .filter-fat legend {
@@ -2391,13 +2399,12 @@ input[type="radio"] .visually-hidden {
   padding: 7px 28px;
   margin-top: 22px;
 }
-}
 
 .filter-btn:hover {
   background-color: rgb(255, 255, 255);
+  box-shadow: none;
   color: #323232;
 }
-
 
 .filter-btn:active {
   background-color: rgb(237, 237, 237);
