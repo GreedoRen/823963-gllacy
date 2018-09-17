@@ -91,7 +91,8 @@ img {
   position: relative;
   padding: 0;
   padding-left: 12px;
-  /* justify-content: space-around; */
+  width: 75%;
+  flex-wrap: wrap;
 }
 
 .visually-hidden {
@@ -1572,10 +1573,16 @@ img {
   z-index: 2;
   border-radius: 5px;
   display: none;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
+
+/* .cart-table .row-table {
+  padding-bottom: 10px;
+} */
 
 .row-table td {
   text-align: left;
+  /* border: 1px solid black; */
 }
 
 .cart-table {
@@ -1585,10 +1592,16 @@ img {
   font-weight: 400;
   z-index: 2;
 
+  border-spacing: 0px 15px;
+
   /* margin-left: 87px;
   margin-top: 27px;
   margin-right: 34px;
   margin-bottom: 18px; */
+}
+
+.cart-icecream {
+  padding-left: 12px;
 }
 
 .btn-del-1,
@@ -1605,6 +1618,8 @@ img {
   background-color: transparent;
   border: 0;
 
+  padding-right: 40px;
+
   cursor: pointer;
 }
 
@@ -1615,7 +1630,7 @@ img {
   content: "";
 
   position: absolute;
-  left: 10px;
+  left: 11px;
 
   width: 15px;
   height: 2px;
@@ -1635,12 +1650,12 @@ img {
 
 .btn-del-1::before,
 .btn-del-1::after {
-  top: 105px;
+  top: 90px;
 }
 
 .btn-del-2::before,
 .btn-del-2::after {
-  top: 40px;
+  top: 36px;
 }
 
 .cart-table tr {
@@ -1651,32 +1666,40 @@ img {
 
 .table-price {
   white-space: nowrap;
+  padding-right: 20px
 }
 
 .table-cost {
   white-space: nowrap;
+  padding-right: 28px;
 }
 
 .table-img img{
   border-radius: 50%;
+  min-width: 33px;
 }
 
 .tbl-img-1 {
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 .tbl-img-2 {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
+}
+
+.table-hr {
+  border: 0.5px solid #cacac7;
+  margin: 10px;
 }
 
 .table-low {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
   align-items: flex-end;
-  /* margin-left: 16px; */
+
   margin-bottom: 21px;
   margin-right: 13px;
+  margin-top: 20px;
 }
 
 /* .cart-icecream {
