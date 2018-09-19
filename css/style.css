@@ -544,7 +544,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  margin-bottom: 0;
+  margin-bottom: 2px;
   margin-top: 0;
 }
 
@@ -745,7 +745,7 @@ img {
 .slider-top {
   /* position: relative; */
 
-  padding-top: 255px;
+  padding-top: 253px;
 
   text-align: center;
   color: #ffffff;
