@@ -7,6 +7,8 @@ body {
   font-weight: bold;
   color: #ffffff;
 
+  min-width: 1200px;
+
   background-color: #849d8f;
   background-position: top center;
 
@@ -134,6 +136,7 @@ img {
   position: absolute;
   top: 20px;
   left: -20px;
+  min-width: 145px;
 }
 
 .catalog-list a{
@@ -743,7 +746,7 @@ img {
 }
 
 .slider-top {
-  /* position: relative; */
+  position: relative;
 
   padding-top: 253px;
 
@@ -778,8 +781,8 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: 350px;
-  left: 380px;
+  top: 425px;
+  left: 27px;
   z-index: 3;
 
   font-size: 0;
@@ -806,6 +809,8 @@ img {
   right: 50%;
   transform: translateX(50%);
   z-index: -1;
+  max-width: none;
+  top: -139px;
 }
 
 .slide::before  {
@@ -1268,11 +1273,11 @@ img {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  bottom: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   z-index: 1;
   overflow: hidden;
 }
