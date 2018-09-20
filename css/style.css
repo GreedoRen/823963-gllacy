@@ -941,13 +941,18 @@ img {
   line-height: 45px;
   position: absolute;
   top: 170px;
+
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .product-price > span:before {
   content: "";
+  position: relative;
 
   width: 32px;
   height: 33px;
+
+  bottom: 9px;
 
   background-image: url("../img/ruble.svg");
   background-repeat: no-repeat;
