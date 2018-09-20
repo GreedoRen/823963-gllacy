@@ -229,8 +229,11 @@ img {
   color: #ffffff;
 }
 
-.active-menu {
+.active-menu{
   background-color: #d07058;
+}
+
+.active-menu a {
   color: #ffffff;
 }
 
@@ -799,8 +802,8 @@ img {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  margin-bottom: 34px;
-  padding: 12px 42px;
+  margin-bottom: 38px;
+  padding: 10px 42px;
 }
 
 .slider-controls {
@@ -986,7 +989,7 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   display: inline-block;
-  vertical-align: inherit;
+  vertical-align: middle;
   /* top: 4px;
   left: 86px; */
 }
@@ -1335,7 +1338,7 @@ img {
 .adress {
   background-color: #ffffff;
   width: 303px;
-  height: 303px;
+  /* height: 303px; */
   color: #323232;
   border-radius: 15px;
   /* position: absolute; */
@@ -1343,6 +1346,7 @@ img {
   /* padding: 0; */
   /* margin: 0; */
   top: 50%;
+  padding-bottom: 31px;
   /* -webkit-transform: translateY(50%);
   -ms-transform: translateY(50%);
           transform: translateY(50%); */
@@ -2133,12 +2137,12 @@ input[type="radio"] .visually-hidden {
 
 .price-div-first {
   display: inline-block;
-  vertical-align: inherit;
+  vertical-align: middle;
 }
 
 .price-div-second {
   display: inline-block;
-  vertical-align: inherit;
+  vertical-align: middle;
 
   top: 50%;
   transform: translateY(-50%);
@@ -2209,7 +2213,7 @@ input[type="radio"] .visually-hidden {
   content: "";
 
   position: absolute;
-  top: -3px;
+  top: 4px;
   left: 47px;
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -2217,7 +2221,7 @@ input[type="radio"] .visually-hidden {
   width: 88px;
   height: 4px;
 
-  top: 50%;
+  /* top: 50%; */
 
   transform: translateY(-50%);
 
@@ -2228,7 +2232,7 @@ input[type="radio"] .visually-hidden {
   content: "";
 
   position: absolute;
-  top: -47px;
+  top: 4px;
   left: 19px;
   background-color: rgba(255, 255, 255, .3);
   background-repeat: no-repeat;
@@ -2236,7 +2240,7 @@ input[type="radio"] .visually-hidden {
   width: 176px;
   height: 4px;
 
-  top: 50%;
+  /* top: 50%; */
 
   transform: translateY(-50%);
 
@@ -2414,10 +2418,9 @@ input[type="radio"] .visually-hidden {
   border-radius: 20px;
 }
 
-/* .fat-value + .catalog-filter-fat:disabled {
-  opacity: 0.4;
-  color: rgba(255, 255, 255, .2);
-} */
+.catalog-filter-fat:disabled + label {
+  color: rgba(255, 255, 255, .4);
+}
 
 .filler-value label{
   position: relative;
@@ -2543,6 +2546,10 @@ input[type="radio"] .visually-hidden {
   color: rgba(255, 255, 255, .4);
 }
 
+.catalog-filter-filler:disabled + label {
+  color: rgba(255, 255, 255, .4);
+}
+
 .filter-btn  {
   border-style: solid;
   border-width: 2px;
@@ -2636,6 +2643,10 @@ input[type="radio"] .visually-hidden {
 .catalog-item > div {
   top: 0;
   left: 0;
+
+  margin-right: -2px;
+  margin-left: -15px;
+  padding-left: 15px;
 }
 .catalog-item:hover > div {
   position: absolute;
