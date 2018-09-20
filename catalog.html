@@ -20,10 +20,10 @@
             <li class="tit-header">
               <a href="#">Новинки</a>
             </li>
-            <li class="cream new-products">
+            <li class="cream new-products active-menu">
               <a href="catalog.html">Сливочное</a>
             </li>
-            <li class="sherbet active-menu new-products">
+            <li class="sherbet new-products">
               <a href="#">Щербет</a>
             </li>
             <li class="fruit ice new-products">
@@ -114,7 +114,7 @@
       </li>
     </ul>
     <div class="header-div">
-      <p class="header-time-catalog">С 10 до 20, ужедневно</p>
+      <p class="header-time-catalog">С 10 до 20, ежедневно</p>
       <p class="header-number">8 812 450-25-25</p>
     </div>
   </header>
@@ -157,8 +157,12 @@
                 <label for="price-to" class="visually-hidden">до</label>
                 <input type="text" id="price-to" name="price-to" value="500">руб.
               </legend>
-              <div class="price-div-first"></div>
-              <div class="price-div-second"></div>
+              <div class="price-lider">
+                <div class="price-div-first">
+                  <span></span><span></span>
+                </div>
+                <div class="price-div-second"></div>
+              </div>
             </fieldset>
 
             <fieldset class="filter-fat fieldset">
@@ -166,15 +170,15 @@
               <ul class="fat-value">
                 <li class="fat-option">
                   <input type="radio" class="catalog-filter-fat visually-hidden" name="filter fat" id="filter-fat-zero"
-                    value="0%">
-                  <label for="filter-fat-zero">0%</label>
+                    value="0%" disabled>
+                  <label for="filter-fat-zero" class="filler-label">0%</label>
                 </li>
                 <li class="fat-option">
                   <input type="radio" class="catalog-filter-fat visually-hidden" name="filter fat" id="filter-fat-ten"
                     value="10%" checked>
                   <label for="filter-fat-ten">до 10%</label>
                 </li>
-                <li class="fat-option">
+                <li class="fat-option" tadindex="1">
                   <input type="radio" class="catalog-filter-fat visually-hidden" name="filter fat" id="filter-fat-less"
                     value="less 30%">
                   <label for="filter-fat-less">до 30%</label>
