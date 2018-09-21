@@ -670,7 +670,7 @@ img {
 .modal-form input::-webkit-input-placeholder,
 .modal-form input::-moz-placeholder,
 .modal-form textarea::-webkit-input-placeholder,
-.modal-form textarea::-moz-placeholder, {
+.modal-form textarea::-moz-placeholder {
   font-weight: 400;
 }
 
