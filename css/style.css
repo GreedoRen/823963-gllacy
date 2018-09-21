@@ -2435,6 +2435,7 @@ input[type="radio"] .visually-hidden {
   top: 0;
   left: 0;
   text-align: center;
+  width: 100%;
 }
 .catalog-item:hover > div {
   position: absolute;
