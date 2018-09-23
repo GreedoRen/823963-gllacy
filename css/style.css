@@ -333,7 +333,9 @@ img {
 }
 
 .search-submenu input:hover {
-  border: 2px solid rgba(154, 154, 154, 0.5);
+  -webkit-box-shadow: inset -0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.5);
 }
 
 .search-submenu input:focus {
@@ -409,7 +411,9 @@ img {
 
 
 .login-form input:hover {
-  border: 2px solid rgba(154, 154, 154, 0.5);
+  -webkit-box-shadow: inset -0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.5);
 }
 
 .login-form input:focus {
@@ -657,7 +661,9 @@ img {
 
 .modal-form input:hover,
 .modal-form textarea:hover {
-  border: 2px solid rgba(154, 154, 154, 0.5);
+  -webkit-box-shadow: inset -0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.5);
 }
 
 .modal-form input:focus,
@@ -1229,6 +1235,13 @@ img {
   border-radius: 8px;
   outline: none;
 }
+
+.mail-input:hover {
+  -webkit-box-shadow: inset -0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+  box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, 0.5);
+}
+
 .adress-and-map {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1541,6 +1554,7 @@ img {
   position: absolute;
 
   left: 15px;
+  top: 7px;
 
   background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
@@ -1574,7 +1588,6 @@ img {
 
 .cart-added {
   position: relative;
-  display: inline-block;
   vertical-align: middle;
   text-align: center;
   margin-left: 6px;
@@ -1724,11 +1737,10 @@ img {
 .breadcrumbs {
   margin-bottom: 10px;
   padding: 0;
-  margin: 0;
-  margin-top: -33px;
-  margin-bottom: -9px;
+  /* margin: 0; */
+  margin-top: -44px;
+  margin-bottom: 2px;
   top: 50%;
-  transform: translateY(-50%);
 }
 
 .breadcrumbs ul {
@@ -1736,6 +1748,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 0;
+  margin: 0;
+  width: 70%;
   flex-wrap: wrap;
 }
 
@@ -2075,18 +2089,19 @@ input[type="radio"] .visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   width: 413px;
-  height: 36px;
-  padding: 2px 6px;
+  /* height: 36px; */
+  padding: 6px 6px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-left: 30px;
-  margin-top: 6px;
+  margin-top: 5px;
   padding-top: 9px;
 }
 
 .fat-value li {
-  margin-left: 30px;
+  margin-left: 28px;
 }
 
 .fat-value label {
@@ -2233,6 +2248,7 @@ input[type="radio"] .visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   width: 701px;
   padding: 8px 10px;
   -ms-flex-pack: distribute;
@@ -2255,8 +2271,8 @@ input[type="radio"] .visually-hidden {
   background-position: 0 0;
   background-size: 19px;
   opacity: 0.8;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
 }
 
 .catalog-filter-filler:checked + label::after {
@@ -2271,8 +2287,8 @@ input[type="radio"] .visually-hidden {
   background-position: 0 0;
   background-size: 23px;
   opacity: 0.8;
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
 }
 
 .catalog-filter-filler:hover + label::before {
@@ -2287,8 +2303,8 @@ input[type="radio"] .visually-hidden {
   background-position: 0 0;
   background-size: 19px;
   opacity: 1;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
 }
 
 .catalog-filter-filler:checked:hover + label::after {
@@ -2303,8 +2319,8 @@ input[type="radio"] .visually-hidden {
   background-position: 0 0;
   background-size: 23px;
   opacity: 1;
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
 }
 
 .catalog-filter-filler:disabled + label::before{
@@ -2319,8 +2335,8 @@ input[type="radio"] .visually-hidden {
   background-position: 0 0;
   background-size: 19px;
   opacity: 0.4;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
 }
 
 .catalog-filter-filler:checked:disabled + label::after {
@@ -2335,10 +2351,16 @@ input[type="radio"] .visually-hidden {
   background-position: 0 0;
   background-size: 23px;
   opacity: 0.4;
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
 
   color: rgba(255, 255, 255, .4);
+}
+
+.filler-option input[type="radio"]:focus ~ label::before,
+.catalog-filter-filler:focus ~ label::after {
+  outline: 3px solid #8fbdec;
+  border-radius: 20px;
 }
 
 .catalog-filter-filler:disabled + label {
@@ -2380,7 +2402,7 @@ input[type="radio"] .visually-hidden {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
-  margin: 0 -13px 42px;
+  margin: 0 13px 42px -38px;
 }
 
 .catalog-products li {
@@ -2405,18 +2427,7 @@ input[type="radio"] .visually-hidden {
 }
 
 .price-catalog span {
-  margin-left: -7px;
-}
-
-.catalog-products h3 {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 24px;
-  padding-left: 16px;
-  padding-right: 19px;
+  margin-left: -9px;
 }
 
 .catalog-products .catalog-item-btn,
@@ -2436,6 +2447,7 @@ input[type="radio"] .visually-hidden {
   left: 0;
   text-align: center;
   width: 100%;
+  /* margin-left: -27px; */
 }
 .catalog-item:hover > div {
   position: absolute;
@@ -2447,12 +2459,27 @@ input[type="radio"] .visually-hidden {
   display: block;
 }
 
-.catalog-products a {
+.catalog-item-btn {
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   padding: 10px 19px;
+}
+
+.product-text-catalog {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  padding-left: 19px;
+  padding-right: 20px;
+
+  display: block;
 }
 
 .catalog-products p {
@@ -2471,6 +2498,7 @@ input[type="radio"] .visually-hidden {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 21px;
