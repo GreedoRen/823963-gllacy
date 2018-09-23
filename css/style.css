@@ -1737,7 +1737,6 @@ img {
 .breadcrumbs {
   margin-bottom: 10px;
   padding: 0;
-  /* margin: 0; */
   margin-top: -44px;
   margin-bottom: 2px;
   top: 50%;
@@ -2091,7 +2090,6 @@ input[type="radio"] .visually-hidden {
   display: flex;
   flex-wrap: wrap;
   width: 413px;
-  /* height: 36px; */
   padding: 6px 6px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -2223,10 +2221,12 @@ input[type="radio"] .visually-hidden {
 }
 
 .fat-option input[type="radio"]:focus ~ label::before,
-.catalog-filter-fat:focus ~ label::after {
+.catalog-filter-fat:focus ~ label::before {
+  content: "";
+
   outline: 3px solid #8fbdec;
-  border-radius: 20px;
 }
+
 
 .catalog-filter-fat:disabled + label {
   color: rgba(255, 255, 255, .4);
@@ -2357,10 +2357,17 @@ input[type="radio"] .visually-hidden {
   color: rgba(255, 255, 255, .4);
 }
 
-.filler-option input[type="radio"]:focus ~ label::before,
+.filler-option input[type="checkbox"]:focus ~ label::before,
 .catalog-filter-filler:focus ~ label::after {
   outline: 3px solid #8fbdec;
-  border-radius: 20px;
+  content: "";
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+  top: 0px;
+  left: 7px;
 }
 
 .catalog-filter-filler:disabled + label {
@@ -2447,7 +2454,6 @@ input[type="radio"] .visually-hidden {
   left: 0;
   text-align: center;
   width: 100%;
-  /* margin-left: -27px; */
 }
 .catalog-item:hover > div {
   position: absolute;
